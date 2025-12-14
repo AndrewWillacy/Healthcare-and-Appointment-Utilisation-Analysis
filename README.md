@@ -24,53 +24,55 @@ Opportunities to improve efficiency and patient attendance
 
 The analysis combines appointment data with external social media signals to provide both operational and contextual insights.
 
+The NHS posed two key questions:
+
+Has there been adequate staff and network capacity?
+
+What was the actual utilisation of available resources?
+
+A secondary objective was to explore missed appointments, their scale, and potential drivers.
 
 
-Figure 1: The number of customers by country
+Figure 1: 
 
-<img width="750" height="450" alt="Screenshot 2025-12-13 134910" src="https://github.com/user-attachments/assets/e5d1c800-453f-48d9-80ae-5ae6a2a84731" />
 
 
 # Data Cleaning & Preparation (Excel)
 
-The raw CSV was imported into Excel and cleaned extensively:
+Key steps included:
 
-- Standardised formatting, removed duplicates and inconsistencies
+Converting Excel to CSV for consistency
 
-- Created calculated fields such as Age and Total_Spend
+Removing duplicates and validating counts
 
-- Cleaned date formats, removed invalid ages (124+ years)
+Handling missing and “unmapped” values
 
-- Resolved inconsistent/erroneous labels in Marital_Status
+Standardising date formats and categories
 
-- Identified income outliers and adjusted analysis accordingly
+Creating cleaned datasets with a _clean suffix
 
-- Updated product category names for clarity
-
-- Imported cleaned data into PostgreSQL for analysis
-
+A significant finding was that unmapped or poor-quality data frequently represented the largest category, limiting analytical precision.
 # Database Structure
 
-The project uses two PostgreSQL tables:
+Four datasets were used:
 
-Marketing_Data
+actual_duration.csv
+Appointment duration, date, location, and volume
 
-Includes demographics, purchase details, and customer behaviour metrics such as:
-Age, Income, Total_Spend, Education, Marital_Status, Country, Kids/Teens, product category spend, and more.
+appointments_regional.csv
+Appointment mode, booking lead time, region, and count
 
-Figure 2: Marketing_Data Table
-<img width="900" height="600" alt="Screenshot 2025-12-13 151717" src="https://github.com/user-attachments/assets/fc31ca9c-3dba-44e6-b499-d2c689e799ee" />
+national_categories.xlsx (converted to CSV)
+Appointment category (routine, urgent, etc.) by date and region
 
-ad_data
+twitter.csv
+Tweets referencing NHS-related topics to explore public sentiment
 
-Contains binary indicators showing whether a customer was exposed to each advertising channel:
-Twitter, Instagram, Bulkmail, Facebook, Brochure
-
-Figure 3: Ad_Data Table
-<img width="900" height="300" alt="Screenshot 2025-12-13 151842" src="https://github.com/user-attachments/assets/0484f707-b2a5-4054-aeab-749ae308e73e" />
+All datasets were cleaned, validated, and standardised before analysis.
+Duplicates were identified and removed where present.
 
 
-# Analytical Approach (SQL)
+# Analytical Approach (Python)
 
 SQL was used to:
 
