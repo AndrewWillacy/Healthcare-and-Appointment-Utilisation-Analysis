@@ -33,25 +33,21 @@ The NHS posed two key questions:
 A secondary objective was to explore missed appointments, their scale, and potential drivers.
 
 
-Figure 1: 
-
-
-
 # Data Cleaning & Preparation (Excel)
 
 Key steps included:
 
-Converting Excel to CSV for consistency
+- Converting Excel to CSV for consistency
 
-Removing duplicates and validating counts
+- Removing duplicates and validating counts
 
-Handling missing and “unmapped” values
+- Handling missing and “unmapped” values
 
-Standardising date formats and categories
+- Standardising date formats and categories
 
-Creating cleaned datasets with a _clean suffix
+- Creating cleaned datasets with a _clean suffix
 
-A significant finding was that unmapped or poor-quality data frequently represented the largest category, limiting analytical precision.
+A significant finding was that **unmapped or poor-quality data frequently represented the largest category**, limiting analytical precision.
 # Database Structure
 
 Four datasets were used:
