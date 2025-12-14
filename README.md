@@ -12,23 +12,23 @@ Each missed appointment represents a financial cost (~£30) and a lost opportuni
 
 This project analyses NHS appointment data to understand:
 
-Appointment utilisation and capacity
+- Appointment utilisation and capacity
 
-Patterns in missed appointments
+= Patterns in missed appointments
 
-Service delivery trends over time
+- Service delivery trends over time
 
-Whether current capacity aligns with actual demand
+- Whether current capacity aligns with actual demand
 
-Opportunities to improve efficiency and patient attendance
+- Opportunities to improve efficiency and patient attendance
 
 The analysis combines appointment data with external social media signals to provide both operational and contextual insights.
 
 The NHS posed two key questions:
 
-Has there been adequate staff and network capacity?
+1. Has there been adequate staff and network capacity?
 
-What was the actual utilisation of available resources?
+2. What was the actual utilisation of available resources?
 
 A secondary objective was to explore missed appointments, their scale, and potential drivers.
 
@@ -74,131 +74,123 @@ Duplicates were identified and removed where present.
 
 # Analytical Approach (Python)
 
-SQL was used to:
+The analysis was conducted in Python using Jupyter Notebook, focusing on:
 
-- Calculate revenue by country
+Exploratory data analysis (EDA)
 
-- Identify top product categories globally and by country
+Time-series trend analysis
 
-- Analyse purchasing behaviour across demographics
+Appointment duration distributions
 
-- Evaluate which advertising methods drive the most successful customer responses
+Capacity vs utilisation comparisons
 
-- Combine exposure + conversion metrics to determine channel effectiveness
+Missed appointment rates
 
-- Segment customers by marital status and presence of children/teens
+Seasonal and pandemic-related effects
 
-- Assign customers a simplified Media label for deeper spend comparisons
+Qualitative exploration of NHS-related Twitter data
 
-Example SQL tasks included:
-
-Use of GREATEST() and LEAST() to identify best/worst performing product categories and ad channels
-
-Multi-table joins using (INNER JOIN) to combine demographic and advertising data
-
-GROUPBY to group results such as by marital status or country 
-
-CASE logic for categorising customers
+Visualisations were produced using Matplotlib and Seaborn.
 
 Aggregations to compute spend patterns, averages, and customer counts
 
-# Tableau Dashboard
-
-The Tableau dashboard (included as .twbx) includes:
-
-- Customer age distribution
-
-- Marital status & education breakdowns
-
-- Income distributions
-
-- Geographic map of customer locations & density
-
-- Revenue and product category performance
-
-- Advertising channel effectiveness summaries
-
-Figure 4: Tableau Dashboard
-<img width="900" height="600" alt="Screenshot 2025-12-13 153958" src="https://github.com/user-attachments/assets/685b0d12-1b62-406f-95fd-34674e667c78" />
-
-The design uses a calm blue palette with clear typography to support executive-level presentations.
 
 # Key Insights
-### Customer Demographics
+📌 Appointment Volumes & Duration
 
-Customer ages range from 28 to 84, average age 55
+Over 106 locations across 7 regions
 
-Majority are married or living with a partner
+General Practice accounts for ~91.5% of all appointments
 
-Most customers have a graduate-level education or higher
+Most appointments last 6–10 minutes
 
-Figure 5: Incoome by total spend
+Same-day appointments are the most common
 
-<img width="650" height="420" alt="Screenshot 2025-12-13 135615" src="https://github.com/user-attachments/assets/45a9f51f-8882-4c0b-ad4d-1ec35ef3f1a8" />
+A large proportion of duration data is unknown, indicating data quality issues
 
+📌 Service Delivery & Trends
 
-### Product Sales
+Face-to-face appointments dominate, followed by telephone
 
-Alcohol is the top-selling category, accounting for 50% of sales
+Telephone appointments increased significantly during Covid
 
-Followed by meat, fish, and commodities
+Appointment volumes peaked in November 2021 (~30.4M) and were lowest in August 2021 (~23.9M)
 
-Vegetables and chocolate are the lowest performers
+Seasonal dips observed in winter months, likely due to holidays and weather
 
-This trend is consistent across most countries
+📌 Missed Appointments
 
-### Geographic Insights
+4–5% of appointments were missed
 
-Spain: largest customer base and highest revenue
+A further 4–5% were unmapped
 
-Germany: highest average spend per customer
+Missed appointments are more common in routine than urgent care
 
-Montenegro: extremely low customer count → potential market concern
+Missed slots represent both financial loss and reduced access for other patients
 
-Figure 6: Average customer spend by country
+📌 Capacity & Utilisation
 
-<img width="650" height="400" alt="Screenshot 2025-12-13 135503" src="https://github.com/user-attachments/assets/b6d44b4d-d328-478a-939d-2bfd98ab2077" />
+Demand for appointments has increased steadily
 
+Capacity strain is most visible during peak periods (e.g. winter)
 
-### Advertising Effectiveness
+A fixed daily capacity figure (1.2M) is applied across all days, including weekends, which skews utilisation analysis
 
-Twitter is the most successful advertising channel overall
+Bank holidays and weekends distort apparent under-utilisation
 
-Followed by Instagram and Facebook
+📌 Social Media Insights
 
-Bulk email surprisingly performs well among single customers
+Common hashtags include #healthcare, #health, #medicine
 
-Brochure advertising is consistently the least effective
+Social media data has potential for sentiment analysis, but current data is limited
 
-Figure 7: Advertising channel effectiveness
-
-<img width="650" height="310" alt="Screenshot 2025-12-13 135545" src="https://github.com/user-attachments/assets/a7fd352c-f419-4159-9aa8-b9e4c540dded" />
-
+Opportunity exists to use social platforms for engagement and awareness campaigns
 
 # Recommendations
+1️⃣ Capacity Planning
 
-Increase inventory in high-revenue categories like Alcohol and Meat
+Improve data quality and reduce unmapped values
 
-Invest more in high-performing ad channels (Twitter, Instagram)
+Replace fixed daily capacity assumptions with demand-driven models
 
-Scale back brochure advertising
+Monitor appointment volumes monthly and seasonally
 
-Consider targeted bulk email campaigns for specific demographics
+Use historical data to plan for winter and flu-season spikes
 
-Reevaluate investment in underperforming markets like Montenegro
+2️⃣ Reducing Missed Appointments
 
-Tailor campaigns using customer segmentation by age, income, and education
+Introduce or expand text/email reminders (with accessibility in mind)
+
+Improve appointment booking, rescheduling, and cancellation processes
+
+Target high no-show regions with awareness campaigns
+
+3️⃣ Social Media Integration
+
+Expand analysis beyond Twitter to other platforms
+
+Monitor sentiment trends at regional level
+
+Use positive campaigns to counter negative sentiment during crises
+
+4️⃣ Further Data Development
+
+Incorporate demographic and socio-economic data
+
+Explore external factors such as transport, weather, and employment patterns
+
+Better identify patient groups most at risk of non-attendance
 
 # Next Steps
 
-**Customer Segmentation:** Apply clustering techniques to identify distinct customer personas based on demographics and spending behaviour.
+Patient Segmentation: Apply clustering techniques to identify patient groups based on appointment type, attendance behaviour, region, and service setting.
 
-**Predictive Modelling:** Build models to predict customer response to advertising campaigns and future spending patterns.
+Predictive Modelling: Build models to predict missed appointments and appointment demand using historical trends, seasonality, and booking lead times.
 
-**Advertising Attribution:** Improve ad exposure logic to correctly account for customers exposed to multiple channels.
+Capacity Forecasting: Improve capacity planning by modelling demand peaks (e.g. winter, flu season) and aligning staffing levels to predicted utilisation.
 
-**Automated Data Pipeline:** Replace manual Excel cleaning with a reproducible Python-based ETL process.
+Automated Data Pipeline: Replace manual preprocessing with a reproducible Python-based ETL workflow, including data validation and quality checks.
 
-**Enhanced Dashboards:** Add more granualar views for product categories, demographics, and regional performance, including trend and forecast analysis.
+Enhanced Dashboards: Develop interactive dashboards with granular views of appointment modes, missed appointment rates, regional utilisation, and trend analysis.
 
-**Statistical Validation:** Apply hypothesis testing to validate differences in spend across regions and customer segments.
+Statistical Validation: Apply hypothesis testing to validate differences in missed appointment rates across regions, appointment categories, and service types.
