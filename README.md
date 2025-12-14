@@ -1,7 +1,9 @@
-# 2Market: Retail sales, demographic and advertising effectiveness analysis
-June 2025
-
+# NHS Appointment Utilisation & Missed Appointments Analysis
+August 2025
 Grade: Distinction
+
+Tools: Python (pandas, matplotlib, seaborn), Jupyter Notebook, Excel, CSV
+
 # Context/Business Questions
 
 Retail sales analysis using Tableau dashboards and business intelligence reporting
