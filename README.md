@@ -14,7 +14,7 @@ This project analyses NHS appointment data to understand:
 
 - Appointment utilisation and capacity
 
-= Patterns in missed appointments
+- Patterns in missed appointments
 
 - Service delivery trends over time
 
