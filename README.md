@@ -1,8 +1,9 @@
 # NHS Appointment Utilisation & Missed Appointments Analysis
 August 2025
+
 Grade: Distinction
 
-Tools: Python (pandas, matplotlib, seaborn), Jupyter Notebook, Excel, CSV
+Tools used: Python (pandas, matplotlib, seaborn), Jupyter Notebook, Excel, CSV
 
 # Context/Business Questions
 
