@@ -7,22 +7,24 @@ Tools used: Python (pandas, matplotlib, seaborn), Jupyter Notebook, Excel, CSV
 
 # Context/Business Questions
 
-Retail sales analysis using Tableau dashboards and business intelligence reporting
-Date: June 2025
-Tools Used: Excel, SQL (PostgreSQL), Tableau, PowerPoint
+The NHS faces increasing demand, constrained resources, and persistent issues with missed appointments.
+Each missed appointment represents a financial cost (~£30) and a lost opportunity for patient care, placing further strain on already pressured services.
 
-2Market is a (fictional) global supermarket chain operating in eight countries with both physical and online storefronts.
-The purpose of this analytics project is to help the business understand:
+This project analyses NHS appointment data to understand:
 
-- Who are their customers (demographics: age, marital status etc)
+Appointment utilisation and capacity
 
-- Which product categories generate the most revenue
+Patterns in missed appointments
 
-- How demographics influence purchasing patterns
+Service delivery trends over time
 
-- Which advertising channels are most effective
+Whether current capacity aligns with actual demand
 
-- How customer behaviour varies by geography
+Opportunities to improve efficiency and patient attendance
+
+The analysis combines appointment data with external social media signals to provide both operational and contextual insights.
+
+
 
 Figure 1: The number of customers by country
 
