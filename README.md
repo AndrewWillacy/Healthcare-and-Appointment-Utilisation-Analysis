@@ -32,7 +32,6 @@ The NHS posed two key questions:
 
 A secondary objective was to explore missed appointments, their scale, and potential drivers.
 
-
 # Data Cleaning & Preparation (Excel)
 
 Key steps included:
@@ -48,20 +47,25 @@ Key steps included:
 - Creating cleaned datasets with a _clean suffix
 
 A significant finding was that **unmapped or poor-quality data frequently represented the largest category**, limiting analytical precision.
+
 # Database Structure
 
 Four datasets were used:
 
 actual_duration.csv
+
 Appointment duration, date, location, and volume
 
 appointments_regional.csv
+
 Appointment mode, booking lead time, region, and count
 
-national_categories.xlsx (converted to CSV)
+national_categories.xlsx (converted to CSV to match the other files)
+
 Appointment category (routine, urgent, etc.) by date and region
 
 twitter.csv
+
 Tweets referencing NHS-related topics to explore public sentiment
 
 All datasets were cleaned, validated, and standardised before analysis.
