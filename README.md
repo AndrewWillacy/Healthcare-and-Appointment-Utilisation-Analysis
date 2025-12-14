@@ -52,19 +52,19 @@ A significant finding was that **unmapped or poor-quality data frequently repres
 
 Four datasets were used:
 
-actual_duration.csv
+**actual_duration.csv**
 
 Appointment duration, date, location, and volume
 
-appointments_regional.csv
+**appointments_regional.csv**
 
 Appointment mode, booking lead time, region, and count
 
-national_categories.xlsx (converted to CSV to match the other files)
+**national_categories.xlsx (converted to CSV to match the other files)**
 
 Appointment category (routine, urgent, etc.) by date and region
 
-twitter.csv
+**twitter.csv (File created through sentiment analysis)**
 
 Tweets referencing NHS-related topics to explore public sentiment
 
