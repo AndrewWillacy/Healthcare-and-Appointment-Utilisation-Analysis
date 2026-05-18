@@ -1,3 +1,371 @@
+# Healthcare Appointment Utilisation & Capacity Analysis
+
+**Healthcare Operations Analytics Project | 2025**
+
+> *How can healthcare appointment and utilisation data be used to improve operational planning, reduce missed appointments, and support more effective capacity management across a national healthcare system?*
+
+---
+
+## Executive Summary
+
+This project analyses large-scale NHS appointment and utilisation data to identify operational trends, capacity pressures, missed appointment patterns, and data quality issues impacting healthcare planning and service delivery.
+
+Using Python, Excel, and exploratory data analysis techniques, the project investigates over one million healthcare appointment records across 106 locations and seven regions. The analysis explores appointment utilisation, seasonal demand patterns, appointment duration trends, service setting performance, and operational strain across the healthcare network.
+
+The project combines structured data cleaning, validation, exploratory analysis, and visualisation to transform raw operational healthcare data into actionable business insight.
+
+A major finding of the project was that data quality limitations — particularly unmapped appointment categories, inconsistent recording practices, and unrealistic capacity assumptions — represented a more significant barrier to reliable decision-making than analytical complexity itself.
+
+Key findings included:
+
+* General Practice accounted for over 90% of appointments across the network
+* Missed appointments consistently represented approximately 4–5% of all appointments
+* Capacity pressures became more visible during winter periods and post-lockdown recovery
+* Significant data quality issues reduced confidence in utilisation reporting
+* Appointment demand increased steadily following Covid disruption
+* Social media data demonstrated potential value for patient sentiment monitoring and engagement analysis
+
+The final recommendations focused on improving data quality processes, strengthening capacity planning, reducing missed appointments, and improving operational resource allocation.
+
+---
+
+## Business Problem
+
+The NHS faces increasing pressure from growing appointment demand, operational strain, missed appointments, and finite healthcare resources.
+
+Healthcare stakeholders needed to better understand:
+
+* Whether current staffing and network capacity were sufficient
+* How healthcare resources were actually being utilised
+* Where operational bottlenecks and inefficiencies existed
+* What trends could be identified in missed appointments
+* Whether external data sources such as social media could support operational insight and public engagement
+
+The analysis aimed to support:
+
+* Capacity planning
+* Operational resource allocation
+* Service utilisation analysis
+* Missed appointment reduction strategies
+* Data-driven healthcare decision-making
+
+---
+
+## Data Sources
+
+| Source                        | Data Collected                                                   | Purpose                              |
+| ----------------------------- | ---------------------------------------------------------------- | ------------------------------------ |
+| **actual_duration.csv**       | Appointment durations, locations, dates, appointment counts      | Utilisation and duration analysis    |
+| **appointments_regional.csv** | Appointment types, modes, booking lead times, appointment status | Regional operational analysis        |
+| **national_categories.xlsx**  | National appointment categories and service settings             | Capacity and service trend analysis  |
+| **twitter.csv**               | NHS-related social media data                                    | Sentiment and engagement exploration |
+
+The combined datasets included:
+
+* Appointment volumes
+* Service settings
+* Appointment modes
+* Appointment durations
+* Regional operational data
+* Appointment categories
+* Missed appointment records
+* Social media activity relating to healthcare
+
+The analysis covered:
+
+* 106 healthcare locations
+* 7 NHS regions
+* Data spanning the Covid and post-Covid recovery period
+* Over 1 million appointment-related records
+
+---
+
+## Tools & Skills Used
+
+| Category                        | Tools / Methods                                          |
+| ------------------------------- | -------------------------------------------------------- |
+| **Data Cleaning & Preparation** | Python, Pandas, Excel                                    |
+| **Exploratory Analysis**        | Pandas, NumPy                                            |
+| **Data Visualisation**          | Matplotlib, Seaborn                                      |
+| **Analysis Techniques**         | Trend analysis, anomaly detection, utilisation analysis  |
+| **Reporting**                   | Stakeholder reporting, operational insight communication |
+
+**Skills demonstrated:**
+
+Data cleaning and validation · Exploratory data analysis · Large-scale dataset handling · Trend analysis · Anomaly detection · Data quality assessment · Operational reporting · Healthcare utilisation analysis · Stakeholder-focused insight communication
+
+---
+
+## Analytical Approach
+
+The project followed a structured workflow combining data cleaning, exploratory analysis, visualisation, operational interpretation, and recommendation development.
+
+### 1. Data Cleaning & Validation
+
+The raw datasets were imported into Python and assessed for quality, consistency, missing values, and structural reliability.
+
+Key preparation activities included:
+
+* Validation of missing values
+* Duplicate record identification and removal
+* Standardisation of date formats
+* Conversion of Excel datasets to CSV format for consistency
+* Validation of categorical variables
+* Handling of inconsistent or unmapped values
+* Data type standardisation
+* Validation of appointment count fields
+
+A significant focus of the project involved assessing the reliability of the underlying operational data.
+
+Key data quality issues identified included:
+
+| Issue Identified                               | Impact                              |
+| ---------------------------------------------- | ----------------------------------- |
+| High levels of unmapped appointment categories | Reduced reporting reliability       |
+| Inconsistent appointment recording practices   | Distorted operational analysis      |
+| Static daily capacity assumptions              | Misleading utilisation calculations |
+| Missing or unclear appointment classifications | Reduced analytical confidence       |
+| Duplicate records in regional appointment data | Inflated reporting outputs          |
+
+The project identified that several reporting limitations originated from upstream operational recording practices rather than analytical methodology.
+
+---
+
+### 2. Exploratory Data Analysis
+
+Exploratory analysis was conducted using Python to identify utilisation trends, seasonal patterns, operational pressures, and missed appointment behaviour.
+
+The analysis investigated:
+
+* Appointment volumes by month
+* Appointment duration patterns
+* Service setting utilisation
+* Appointment modes
+* Seasonal demand variation
+* Missed appointment rates
+* Regional differences in utilisation
+* Covid-related operational disruption
+* Capacity and utilisation trends
+
+Key exploratory findings included:
+
+* General Practice accounted for approximately 91.5% of all appointments
+* Most appointments lasted between 6–10 minutes
+* Face-to-face and telephone appointments represented the dominant appointment modes
+* Appointment demand showed seasonal fluctuations with winter pressure periods
+* November 2021 recorded the highest appointment volume (~30.4M)
+* August 2021 recorded the lowest appointment volume (~23.9M)
+* Telephone appointments increased significantly during Covid periods
+
+Visualisations included:
+
+* Time series analysis
+* Appointment trend visualisations
+* Service setting comparisons
+* Duration distribution charts
+* Seasonal trend analysis
+* Appointment category comparisons
+
+---
+
+### 3. Missed Appointment & Capacity Analysis
+
+A major focus of the project involved analysing missed appointments and operational utilisation pressures.
+
+The analysis identified:
+
+| Observation                                                       | Operational Impact                     |
+| ----------------------------------------------------------------- | -------------------------------------- |
+| Missed appointments consistently represented 4–5% of appointments | Financial and operational inefficiency |
+| Routine appointments showed higher non-attendance rates           | Increased scheduling inefficiency      |
+| Capacity pressure increased during winter periods                 | Evidence of operational strain         |
+| Demand increased steadily following Covid disruption              | Growing utilisation pressure           |
+
+The project also identified a significant issue relating to the use of a fixed daily capacity assumption.
+
+A static figure of approximately 1.2 million appointments per day was applied across all days, including weekends and bank holidays, despite significantly lower appointment demand during these periods.
+
+This introduced distortion into utilisation calculations and reduced confidence in capacity reporting outputs.
+
+A key conclusion of the analysis was:
+
+> The primary limitation affecting operational insight was not analytical capability, but inconsistent and unreliable operational data capture.
+
+---
+
+### 4. Social Media Analysis
+
+External Twitter (X) data was analysed to explore the potential value of social media as an additional operational insight source.
+
+The analysis investigated:
+
+* Trending healthcare hashtags
+* Public discussion themes
+* Potential sentiment indicators
+* Opportunities for patient engagement analysis
+
+Key observations included:
+
+* Frequent use of hashtags including:
+
+  * #healthcare
+  * #health
+  * #medicine
+* Social media data showed potential value for:
+
+  * Patient sentiment monitoring
+  * Public awareness campaigns
+  * Engagement trend analysis
+  * Service communication strategies
+
+However, the analysis also concluded that the supplied social media dataset was relatively limited and would require more structured collection and enrichment for operational use.
+
+---
+
+## Key Findings & Business Recommendations
+
+### Finding 1: Operational Demand Continued to Increase
+
+Appointment demand increased steadily across the analysed period, particularly following Covid-related disruption.
+
+| Trend                            | Operational Interpretation                |
+| -------------------------------- | ----------------------------------------- |
+| Rising appointment volumes       | Increasing pressure on NHS infrastructure |
+| Winter utilisation spikes        | Seasonal operational strain               |
+| Increased telephone appointments | Covid-driven service adaptation           |
+
+#### Recommendation
+
+Continue monitoring utilisation trends and align staffing and operational resources more dynamically around predictable seasonal demand patterns.
+
+---
+
+### Finding 2: Data Quality Issues Limited Operational Insight
+
+Large volumes of unmapped and inconsistently recorded data reduced confidence in reporting outputs.
+
+| Data Quality Issue               | Business Impact                  |
+| -------------------------------- | -------------------------------- |
+| Unmapped appointment categories  | Reduced reporting reliability    |
+| Inconsistent recording standards | Distorted utilisation analysis   |
+| Static capacity assumptions      | Misleading operational reporting |
+
+#### Recommendation
+
+Prioritise improvements to operational data capture processes and standardisation before implementing more advanced analytical or forecasting models.
+
+---
+
+### Finding 3: Missed Appointments Represented Significant Operational Waste
+
+Missed appointments consistently represented approximately 4–5% of all appointments across the analysed period.
+
+These missed appointments:
+
+* Reduced operational efficiency
+* Increased pressure on healthcare services
+* Created financial waste
+* Reduced appointment availability for other patients
+
+#### Recommendation
+
+Introduce more proactive appointment reminder and rescheduling systems including:
+
+* SMS reminders
+* Email notifications
+* Simplified cancellation and rescheduling systems
+* Digital patient self-service tools
+
+---
+
+### Finding 4: Capacity Reporting Did Not Reflect Real Operational Conditions
+
+The use of a fixed daily capacity assumption distorted utilisation analysis, particularly during weekends and bank holidays.
+
+#### Recommendation
+
+Develop more realistic dynamic capacity models aligned to:
+
+* Seasonal demand
+* Day-of-week variation
+* Staffing availability
+* Regional operational pressures
+
+---
+
+### Finding 5: Social Media Could Support Public Engagement Analysis
+
+Healthcare-related social media activity demonstrated potential value for:
+
+* Public sentiment analysis
+* Awareness campaign monitoring
+* Identifying recurring public concerns
+* Supporting engagement strategies
+
+#### Recommendation
+
+Explore structured sentiment analysis and social media monitoring as part of broader operational and communications analytics capability.
+
+---
+
+## Limitations
+
+Several limitations impacted the reliability and scope of the analysis:
+
+* Significant unmapped or inconsistent operational data
+* Static capacity assumptions distorted utilisation calculations
+* Covid disruption created unusual utilisation patterns
+* Limited demographic and socio-economic patient data
+* Limited social media sample quality and coverage
+* The project focused primarily on exploratory rather than predictive analysis
+
+Despite these limitations, the analysis identified clear operational trends and important process improvement opportunities.
+
+---
+
+## Future Steps
+
+Potential future enhancements include:
+
+* Predictive modelling for appointment demand forecasting
+* Regional capacity forecasting models
+* Patient segmentation analysis
+* Automated operational reporting dashboards
+* Real-time utilisation monitoring
+* Enhanced data validation pipelines
+* Integration of demographic and socio-economic datasets
+* Weather and transport data integration for missed appointment analysis
+* NLP-based sentiment analysis of social media data
+
+---
+
+## Deliverables
+
+| Deliverable              | Description                                  |
+| ------------------------ | -------------------------------------------- |
+| Jupyter Notebook         | Python-based exploratory analysis workflow   |
+| Technical Report         | Operational findings and recommendations     |
+| Data Visualisations      | Trend analysis and utilisation reporting     |
+| Stakeholder Presentation | Business-focused operational insight summary |
+
+---
+
+## About
+
+This project was completed as part of the **LSE Data Analytics Career Accelerator (2025, Distinction)**.
+
+The analysis focused on transforming large-scale operational healthcare data into actionable insight through structured cleaning, validation, exploratory analysis, visualisation, and operational interpretation.
+
+**Andrew Willacy**
+[LinkedIn](https://www.linkedin.com/in/andrew-willacy-572682347/) | [GitHub Portfolio](https://github.com/AndrewWillacy) | [andrew.willacy.data@gmail.com](mailto:andrew.willacy.data@gmail.com)
+
+
+
+
+---
+---
+
+
 # NHS HEALTHCARE AND APPOINTMENT UTILISATION ANALYSIS 
 July 2025
 
