@@ -364,7 +364,223 @@ The analysis focused on transforming large-scale operational healthcare data int
 
 ---
 ---
+# NHS Appointment Utilisation & Missed Appointments Analysis
+**LSE Data Analytics Career Accelerator — DA201: Diagnostic Analysis using Python | August 2025**
 
+> *Has the NHS had adequate staff and network capacity? What was the actual utilisation of resources, and what is driving missed appointments?*
+
+---
+
+## Executive Summary
+
+This project analyses real-world NHS appointment data covering over one million records across 106 locations and seven regions in England, spanning 2020 to 2022. Using Python, the analysis identifies utilisation patterns, seasonal trends, capacity gaps, and the scale and distribution of missed appointments. A Twitter dataset was also reviewed to assess the potential value of social media as an external data source for patient engagement insight.
+
+**Key result:** While the NHS delivered increasing appointment volumes across the period, the data reveals persistent strain during peak periods, a 4–5% missed appointment rate carrying significant financial and social cost, and — critically — that poor data quality is itself the primary barrier to reliable capacity planning. Unmapped and unknown values are frequently the highest-count category in key metrics, making confident conclusions difficult without improved data capture at source.
+
+---
+
+## Business Problem
+
+The NHS faces increasing demand against constrained resources. With an ageing population and post-Covid recovery pressures, understanding how capacity is being used — and where appointments are being missed — is essential for budget planning and infrastructure decisions.
+
+Two core questions drove the analysis:
+
+> **1. Has there been adequate staff and network capacity?**
+> **2. What was the actual utilisation of resources?**
+
+Supporting analytical questions included:
+- What are the seasonal and monthly trends in appointment volumes?
+- Which service settings and appointment modes drive the most activity?
+- What is the scale and pattern of missed appointments?
+- Can Twitter data provide useful insight into public sentiment around NHS services?
+
+---
+
+## Data Sources
+
+| File | Contents |
+|------|----------|
+| `actual_duration.csv` | Appointment durations, location, date, count |
+| `appointments_regional.csv` | Appointment mode, status, booking lead time, location, date, count |
+| `national_categories.xlsx` | Service setting, context type, national category, location, date, count |
+| `twitter.csv` | Tweets referencing NHS-related topics scraped from Twitter/X |
+
+All datasets were provided as semi-wrangled extracts from publicly available NHS integrated care board (ICB) data. The Excel file was converted to CSV for consistency before analysis.
+
+---
+
+## Tools & Skills Used
+
+| Category | Tools / Libraries |
+|----------|------------------|
+| **Language** | Python 3 |
+| **Data Processing** | pandas, NumPy |
+| **Visualisation** | Matplotlib, Seaborn |
+| **Environment** | Jupyter Notebook |
+| **External Data** | Twitter/X dataset (hashtag and sentiment analysis) |
+
+**Skills demonstrated:** Large-scale real-world dataset handling · Multi-dataset cleaning and validation · Outlier and anomaly detection · Trend and seasonal analysis · Data quality investigation · Social media data assessment · Stakeholder-focused insight communication
+
+---
+
+## Analytical Approach
+
+### 1. Data Ingestion & Cleaning
+
+Four datasets were imported and cleaned independently before analysis:
+
+- **Null values** checked across all datasets — none found in primary fields
+- **Duplicates** identified and removed in `appointments_regional` only
+- **Data types** validated and corrected where necessary
+- **Excel to CSV conversion** applied to `national_categories.xlsx` for consistency
+- **Cleaned datasets** saved with `_clean` suffix to preserve originals
+- **Capacity benchmark issue identified:** The NHS uses a fixed daily capacity figure of 1.2 million appointments across all days, including weekends where actual volumes are significantly lower. This fundamentally skews utilisation calculations and was flagged as a primary data quality concern throughout the analysis
+
+**Key data quality finding:** Across multiple metrics — particularly appointment duration — "Unknown" and unmapped values were frequently the highest-count category, often exceeding any named value. This was investigated as a systemic recording failure rather than random missingness, and treated as the primary analytical limitation rather than a problem to be imputed around.
+
+### 2. Exploratory Data Analysis
+
+**Scale and structure:**
+- 106 locations across 7 NHS regions
+- Date range: 2020–2022 (covering pre-Covid baseline, lockdown period, and recovery)
+- General Practice accounted for 91.5% of all appointments
+- Face-to-face was the most common appointment mode; telephone became significantly more common during Covid lockdowns and remained elevated post-restriction
+
+**Volume trends:**
+- November 2021 recorded the highest monthly appointment volume (30.4 million)
+- August 2021 recorded the lowest (23.9 million)
+- A clear seasonal pattern emerged with dips in December–February, likely reflecting holiday periods and weather effects
+- A steady upward trend in total appointments across the period, with a visible dip during lockdowns followed by recovery
+
+**Appointment duration:**
+- The majority of appointments with recorded durations lasted 6–10 minutes
+- 1–5 minute appointments were the most frequently occurring named category
+- "Unknown" duration was the single largest category overall — a significant data recording problem
+
+**Missed appointments:**
+- 4–5% of appointments were recorded as missed (DNA — Did Not Attend) across the period
+- A further 4–5% were unmapped or unclassifiable
+- Missed appointments were more frequent in routine categories than urgent ones
+- At £30 per missed appointment, the financial cost is substantial — and the social cost of lost slots equally significant
+
+**National categories:**
+- The majority of appointments were classified as "Routine"
+- Urgent appointments showed stronger seasonal variation, spiking in winter months
+
+### 3. Twitter / Social Media Analysis
+
+The Twitter dataset was reviewed to assess its potential value as an external signal for patient behaviour and sentiment. Top trending hashtags included `#healthcare`, `#health`, and `#medicine`.
+
+**Honest assessment:** The data in its current form has limited analytical value. The hashtag frequency analysis provides directional information about topics but no reliable sentiment signal. The dataset was treated as indicative of potential rather than a source of actionable insight — and this was communicated explicitly rather than overstated.
+
+---
+
+## Key Findings
+
+### Capacity & Utilisation
+
+| Finding | Detail |
+|---------|--------|
+| Demand is growing | Steady upward trend across the period; GP services under most pressure |
+| Capacity calculation is flawed | 1.2M daily figure applied uniformly including weekends — skews all utilisation metrics |
+| Peak pressure visible | Winter months and post-lockdown recovery periods show clear capacity strain |
+| Data quality is the primary problem | Unknown/unmapped values dominate key metrics; reliable utilisation analysis requires better recording at source |
+
+### Missed Appointments
+
+| Metric | Value |
+|--------|-------|
+| DNA rate | 4–5% consistently across the period |
+| Unmapped/unclassifiable | Further 4–5% |
+| Financial cost per missed appointment | £30 |
+| Most affected category | Routine appointments |
+| Least affected category | Urgent appointments |
+
+### Social Media
+
+Twitter data shows potential as a channel for understanding public sentiment but requires significant development before it could inform operational decisions.
+
+---
+
+## Recommendations
+
+**1. Fix the capacity benchmark**
+The 1.2 million daily capacity figure must be adjusted to reflect actual working days and appointment availability patterns. Applying a uniform figure across weekends and bank holidays produces misleading utilisation rates.
+
+**2. Improve data recording at source**
+Unknown and unmapped values are the single biggest barrier to reliable insight. Without consistent recording of appointment duration, status, and context type, capacity planning will remain guesswork. Investment in data quality at ICB level is more valuable than additional analytical sophistication.
+
+**3. Address missed appointments through process, not punishment**
+Text and email reminders for routine appointments could reduce DNA rates, with the caveat that digital access cannot be assumed for all patients. Making rescheduling and cancellation easier — through apps or patient portals where available — is likely more effective than financial penalties, which disproportionately affect the most vulnerable patients.
+
+**4. Develop social media monitoring properly**
+Twitter/X and other platforms have real potential for understanding patient concerns and informing public health campaigns. The current dataset is insufficient — a structured social listening programme across multiple platforms would generate more actionable insight.
+
+**5. Build demand forecasting from historical trends**
+Historical appointment volume data can support winter surge planning, though the 2020–2022 window is unusual due to Covid and may not represent typical seasonal patterns. Longer historical data would improve forecast reliability.
+
+---
+
+## Limitations
+
+- **Fixed capacity benchmark:** The 1.2M daily figure is applied uniformly regardless of day type, making true utilisation rates unreliable
+- **Data quality:** Unknown/unmapped values dominate several key metrics — particularly appointment duration — making confident conclusions difficult
+- **Covid distortion:** The 2020–2022 window is not representative of typical NHS demand patterns; lockdown-era trends may not recur
+- **No demographic data:** Patient demographics are not available in the dataset — it is impossible to identify which patient groups are most likely to miss appointments
+- **Twitter data limitations:** Small, unrepresentative dataset with no reliable sentiment scoring; treated as indicative only
+- **Bank holiday distortion:** Monday appointment counts are inflated or deflated depending on bank holiday occurrence, affecting weekly trend analysis
+- **No financial modelling:** Cost implications are estimated from published £30 per missed appointment figure; actual cost calculations would require additional data
+
+---
+
+## Further Analysis
+
+- **Demographic data integration** — link appointment records to patient demographic and socio-economic data to identify at-risk non-attendance groups
+- **Extended time series** — include pre-2020 data to establish a non-Covid baseline for seasonal forecasting
+- **Transport and weather overlay** — test whether proximity to transport links or weather conditions predict missed appointment rates
+- **Realistic capacity modelling** — rebuild the capacity benchmark using actual working day and appointment availability patterns
+- **Structured social listening** — develop a proper social media monitoring framework across Twitter/X, Facebook, and other platforms
+- **Regional variation analysis** — explore whether missed appointment rates and utilisation patterns vary significantly between the seven regions
+
+---
+
+## Repository Structure
+
+```
+├── data/
+│   ├── actual_duration_clean.csv
+│   ├── appointments_regional_clean.csv
+│   ├── national_categories_clean.csv
+│   └── twitter.csv
+├── notebooks/
+│   └── Willacy_Andrew_DA201_Assignment_Notebook.ipynb
+├── report/
+│   └── Willacy_Andrew_DA201_Assignment_Report.pdf
+└── README.md
+```
+
+---
+
+## Results Summary
+
+| Question | Finding |
+|----------|---------|
+| Adequate capacity? | Capacity is under strain at peaks; the capacity benchmark itself is flawed and needs rebuilding |
+| Actual utilisation? | Growing demand, 91.5% GP-driven; data quality prevents a fully reliable utilisation picture |
+| Missed appointments? | 4–5% DNA rate consistently; routine appointments most affected; £30 cost per missed slot |
+| Social media value? | Limited in current form; significant potential if properly developed |
+
+---
+
+## About
+
+This project was completed as part of the **LSE Data Analytics Career Accelerator (DA201: Diagnostic Analysis using Python), August 2025**, achieving a score of 72/90.
+
+**Andrew Willacy**
+[LinkedIn](https://www.linkedin.com/in/andrew-willacy-572682347/) | [GitHub Portfolio](https://github.com/AndrewWillacy) | andrew.willacy.data@gmail.com
+
+---
+---
 
 # NHS HEALTHCARE AND APPOINTMENT UTILISATION ANALYSIS 
 July 2025
