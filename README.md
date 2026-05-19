@@ -134,6 +134,8 @@ The project identified that several reporting limitations originated from upstre
 
 - **Key data quality finding:** Across multiple metrics — particularly appointment duration — "Unknown" and unmapped values were frequently the highest-count category, often exceeding any named value. This was investigated as a systemic recording failure rather than random missingness, and treated as the primary analytical limitation rather than a problem to be imputed around.
 
+---
+
 ### 2. Exploratory Data Analysis
 
 Exploratory analysis was conducted using Python to identify utilisation trends, seasonal patterns, operational pressures, and missed appointment behaviour.
