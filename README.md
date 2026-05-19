@@ -154,13 +154,22 @@ The analysis investigated:
 
 Key exploratory findings included:
 
-* General Practice accounted for approximately 91.5% of all appointments
-* Most appointments lasted between 6–10 minutes
-* Face-to-face and telephone appointments represented the dominant appointment modes
-* Appointment demand showed seasonal fluctuations with winter pressure periods
-* November 2021 recorded the highest appointment volume (~30.4M)
-* August 2021 recorded the lowest appointment volume (~23.9M)
-* Telephone appointments increased significantly during Covid periods
+**Scale and structure:**
+- 106 locations across 7 NHS regions
+- Date range: 2020–2022 (covering pre-Covid baseline, lockdown period, and recovery)
+- General Practice accounted for 91.5% of all appointments
+- Face-to-face was the most common appointment mode; telephone became significantly more common during Covid lockdowns and remained elevated post-restriction
+
+**Volume trends:**
+- November 2021 recorded the highest monthly appointment volume (30.4 million)
+- August 2021 recorded the lowest (23.9 million)
+- A clear seasonal pattern emerged with dips in December–February, likely reflecting holiday periods and weather effects
+- A steady upward trend in total appointments across the period, with a visible dip during lockdowns followed by recovery
+
+**Appointment duration:**
+- The majority of appointments with recorded durations lasted 6–10 minutes
+- 1–5 minute appointments were the most frequently occurring named category
+- "Unknown" duration was the single largest category overall — a significant data recording problem
 
 Visualisations included:
 
@@ -171,6 +180,7 @@ Visualisations included:
 * Seasonal trend analysis
 * Appointment category comparisons
 
+---
 ---
 ### 2. Exploratory Data Analysis
 
