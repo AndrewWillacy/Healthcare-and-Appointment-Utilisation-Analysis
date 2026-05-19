@@ -60,6 +60,8 @@ The analysis aimed to support:
 | **national_categories.xlsx**  | National appointment categories and service settings             | Capacity and service trend analysis  |
 | **twitter.csv**               | NHS-related social media data                                    | Sentiment and engagement exploration |
 
+All datasets were provided as semi-wrangled extracts from publicly available NHS integrated care board (ICB) data. The Excel file was converted to CSV for consistency before analysis.
+
 The combined datasets included:
 
 * Appointment volumes
