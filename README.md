@@ -171,6 +171,10 @@ Key exploratory findings included:
 - 1–5 minute appointments were the most frequently occurring named category
 - "Unknown" duration was the single largest category overall — a significant data recording problem
 
+**National categories:**
+- The majority of appointments were classified as "Routine"
+- Urgent appointments showed stronger seasonal variation, spiking in winter months
+
 Visualisations included:
 
 * Time series analysis
@@ -181,35 +185,7 @@ Visualisations included:
 * Appointment category comparisons
 
 ---
----
-### 2. Exploratory Data Analysis
 
-**Scale and structure:**
-- 106 locations across 7 NHS regions
-- Date range: 2020–2022 (covering pre-Covid baseline, lockdown period, and recovery)
-- General Practice accounted for 91.5% of all appointments
-- Face-to-face was the most common appointment mode; telephone became significantly more common during Covid lockdowns and remained elevated post-restriction
-
-**Volume trends:**
-- November 2021 recorded the highest monthly appointment volume (30.4 million)
-- August 2021 recorded the lowest (23.9 million)
-- A clear seasonal pattern emerged with dips in December–February, likely reflecting holiday periods and weather effects
-- A steady upward trend in total appointments across the period, with a visible dip during lockdowns followed by recovery
-
-**Appointment duration:**
-- The majority of appointments with recorded durations lasted 6–10 minutes
-- 1–5 minute appointments were the most frequently occurring named category
-- "Unknown" duration was the single largest category overall — a significant data recording problem
-
-**Missed appointments:**
-- 4–5% of appointments were recorded as missed (DNA — Did Not Attend) across the period
-- A further 4–5% were unmapped or unclassifiable
-- Missed appointments were more frequent in routine categories than urgent ones
-- At £30 per missed appointment, the financial cost is substantial — and the social cost of lost slots equally significant
-
-**National categories:**
-- The majority of appointments were classified as "Routine"
-- Urgent appointments showed stronger seasonal variation, spiking in winter months
 ### 3. Missed Appointment & Capacity Analysis
 
 A major focus of the project involved analysing missed appointments and operational utilisation pressures.
