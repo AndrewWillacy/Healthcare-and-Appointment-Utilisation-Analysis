@@ -31,7 +31,7 @@ The final recommendations focused on improving data quality processes, strengthe
 
 ## Business Problem
 
-The NHS faces increasing pressure from growing appointment demand, operational strain, missed appointments, and finite healthcare resources.
+The NHS faces increasing demand against constrained resources. With an ageing population and post-Covid recovery pressures, understanding how capacity is being used — and where appointments are being missed — is essential for budget planning and infrastructure decisions.
 
 Healthcare stakeholders needed to better understand:
 
