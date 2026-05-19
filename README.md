@@ -102,7 +102,7 @@ Data cleaning and validation · Exploratory data analysis · Large-scale dataset
 
 The project followed a structured workflow combining data cleaning, exploratory analysis, visualisation, operational interpretation, and recommendation development.
 
-### 1. Data Cleaning & Validation
+### 1. Data Ingestion, Cleaning & Validation
 
 The raw datasets were imported into Python and assessed for quality, consistency, missing values, and structural reliability.
 
