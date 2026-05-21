@@ -346,12 +346,12 @@ Despite these limitations, the analysis identified clear operational trends and 
 Potential future enhancements include:
 
 - **Develop a predictive model** - Predictive modelling for appointment demand forecasting
-- **Demographic data integration** — link appointment records to patient demographic and socio-economic data to identify at-risk non-attendance groups
-- **Extended time series** — include pre-2020 data to establish a non-Covid baseline for seasonal forecasting
-- **Transport and weather overlay** — test whether proximity to transport links or weather conditions predict missed appointment rates
-- **Realistic capacity modelling** — rebuild the capacity benchmark using actual working day and appointment availability patterns
-- **Structured social listening** — develop a proper social media monitoring framework across Twitter/X, Facebook, and other platforms
-- **Regional variation analysis** — explore whether missed appointment rates and utilisation patterns vary significantly between the seven regions
+- **Demographic data integration** - link appointment records to patient demographic and socio-economic data to identify at-risk non-attendance groups
+- **Extended time series** - include pre-2020 data to establish a non-Covid baseline for seasonal forecasting
+- **Transport and weather overlay** - test whether proximity to transport links or weather conditions predict missed appointment rates
+- **Realistic capacity modelling** - rebuild the capacity benchmark using actual working day and appointment availability patterns
+- **Structured social listening** - develop a proper social media monitoring framework across Twitter/X, Facebook, and other platforms
+- **Regional variation analysis** - explore whether missed appointment rates and utilisation patterns vary significantly between the seven regions
 - **Patient segmentation** - Segmenting and clustering by paatient type, age, demographic etc
 - **Sentiment analysis** - The use of NLP-based sentiment analysis of social media data to gauge opinion
 - **Live dashborads** - Automated operational reporting dashboards for real-time utilisation monitoring
