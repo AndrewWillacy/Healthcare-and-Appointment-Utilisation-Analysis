@@ -253,7 +253,7 @@ Appointment demand increased steadily across the analysed period, particularly f
 
 #### Recommendation
 
-Continue monitoring utilisation trends and align staffing and operational resources more dynamically around predictable seasonal demand patterns.
+> Continue monitoring utilisation trends and align staffing and operational resources more dynamically around predictable seasonal demand patterns.
 
 ---
 
@@ -269,7 +269,7 @@ Large volumes of unmapped and inconsistently recorded data reduced confidence in
 
 #### Recommendation
 
-Prioritise improvements to operational data capture processes and standardisation before implementing more advanced analytical or forecasting models.
+> Prioritise improvements to operational data capture processes and standardisation before implementing more advanced analytical or forecasting models.
 
 ---
 
@@ -286,7 +286,7 @@ These missed appointments:
 
 #### Recommendation
 
-Introduce more proactive appointment reminder and rescheduling systems including:
+> Introduce more proactive appointment reminder and rescheduling systems including:
 
 * SMS reminders
 * Email notifications
@@ -301,7 +301,7 @@ The use of a fixed daily capacity assumption distorted utilisation analysis, par
 
 #### Recommendation
 
-Develop more realistic dynamic capacity models aligned to:
+> Develop more realistic dynamic capacity models aligned to:
 
 * Seasonal demand
 * Day-of-week variation
@@ -321,7 +321,7 @@ Healthcare-related social media activity demonstrated potential value for:
 
 #### Recommendation
 
-Explore structured sentiment analysis and social media monitoring as part of broader operational and communications analytics capability.
+> Explore structured sentiment analysis and social media monitoring as part of broader operational and communications analytics capability.
 
 ---
 
