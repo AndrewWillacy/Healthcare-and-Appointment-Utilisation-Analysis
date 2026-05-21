@@ -368,6 +368,17 @@ Potential future enhancements include:
 
 ---
 
+## Results Summary
+
+| Question | Finding |
+|----------|---------|
+| Adequate capacity? | Capacity is under strain at peaks; the capacity benchmark itself is flawed and needs rebuilding |
+| Actual utilisation? | Growing demand, 91.5% GP-driven; data quality prevents a fully reliable utilisation picture |
+| Missed appointments? | 4–5% DNA rate consistently; routine appointments most affected; £30 cost per missed slot |
+| Social media value? | Limited in current form; significant potential if properly developed |
+
+---
+
 ## Repository Structure
 
 ```
@@ -383,18 +394,6 @@ Potential future enhancements include:
 └── README.md
 ```
 
----
-
-## Results Summary
-
-| Question | Finding |
-|----------|---------|
-| Adequate capacity? | Capacity is under strain at peaks; the capacity benchmark itself is flawed and needs rebuilding |
-| Actual utilisation? | Growing demand, 91.5% GP-driven; data quality prevents a fully reliable utilisation picture |
-| Missed appointments? | 4–5% DNA rate consistently; routine appointments most affected; £30 cost per missed slot |
-| Social media value? | Limited in current form; significant potential if properly developed |
-
----
 ## About
 
 This project was completed as part of the **LSE Data Analytics Career Accelerator (2025, Distinction)**.
