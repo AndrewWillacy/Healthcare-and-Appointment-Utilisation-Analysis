@@ -325,6 +325,33 @@ Explore structured sentiment analysis and social media monitoring as part of bro
 
 ---
 
+## Key Findings
+
+### Capacity & Utilisation
+
+| Finding | Detail |
+|---------|--------|
+| Demand is growing | Steady upward trend across the period; GP services under most pressure |
+| Capacity calculation is flawed | 1.2M daily figure applied uniformly including weekends — skews all utilisation metrics |
+| Peak pressure visible | Winter months and post-lockdown recovery periods show clear capacity strain |
+| Data quality is the primary problem | Unknown/unmapped values dominate key metrics; reliable utilisation analysis requires better recording at source |
+
+### Missed Appointments
+
+| Metric | Value |
+|--------|-------|
+| DNA rate | 4–5% consistently across the period |
+| Unmapped/unclassifiable | Further 4–5% |
+| Financial cost per missed appointment | £30 |
+| Most affected category | Routine appointments |
+| Least affected category | Urgent appointments |
+
+### Social Media
+
+Twitter data shows potential as a channel for understanding public sentiment but requires significant development before it could inform operational decisions.
+
+---
+
 ## Limitations
 
 Several limitations impacted the reliability and scope of the analysis:
