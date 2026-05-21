@@ -236,15 +236,7 @@ Key observations included:
   * Engagement trend analysis
   * Service communication strategies
 
-However, the analysis also concluded that the supplied social media dataset was relatively limited and would require more structured collection and enrichment for operational use.
-
----
-
-### 3. Twitter / Social Media Analysis
-
-The Twitter dataset was reviewed to assess its potential value as an external signal for patient behaviour and sentiment. Top trending hashtags included `#healthcare`, `#health`, and `#medicine`.
-
-**Honest assessment:** The data in its current form has limited analytical value. The hashtag frequency analysis provides directional information about topics but no reliable sentiment signal. The dataset was treated as indicative of potential rather than a source of actionable insight — and this was communicated explicitly rather than overstated.
+> The data in its current form has limited analytical value. The hashtag frequency analysis provides directional information about topics but no reliable sentiment signal. The dataset was treated as indicative of potential rather than a source of actionable insight — and this was communicated explicitly rather than overstated.
 
 ---
 ## Key Findings & Business Recommendations
