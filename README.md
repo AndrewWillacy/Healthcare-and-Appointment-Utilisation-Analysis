@@ -210,7 +210,12 @@ A key conclusion of the analysis was:
 > The primary limitation affecting operational insight was not analytical capability, but inconsistent and unreliable operational data capture.
 
 ---
-
+**Missed appointments:**
+- 4–5% of appointments were recorded as missed (DNA — Did Not Attend) across the period
+- A further 4–5% were unmapped or unclassifiable
+- Missed appointments were more frequent in routine categories than urgent ones
+- At £30 per missed appointment, the financial cost is substantial — and the social cost of lost slots equally significant
+---
 ### 4. Social Media Analysis
 
 External Twitter (X) data was analysed to explore the potential value of social media as an additional operational insight source.
