@@ -324,26 +324,12 @@ Healthcare-related social media activity demonstrated potential value for:
 > Explore structured sentiment analysis and social media monitoring as part of broader operational and communications analytics capability.
 
 ---
-## Recommendations
-
-**1. Fix the capacity benchmark**
-The 1.2 million daily capacity figure must be adjusted to reflect actual working days and appointment availability patterns. Applying a uniform figure across weekends and bank holidays produces misleading utilisation rates.
-
-**2. Improve data recording at source**
-Unknown and unmapped values are the single biggest barrier to reliable insight. Without consistent recording of appointment duration, status, and context type, capacity planning will remain guesswork. Investment in data quality at ICB level is more valuable than additional analytical sophistication.
-
-**3. Address missed appointments through process, not punishment**
-Text and email reminders for routine appointments could reduce DNA rates, with the caveat that digital access cannot be assumed for all patients. Making rescheduling and cancellation easier — through apps or patient portals where available — is likely more effective than financial penalties, which disproportionately affect the most vulnerable patients.
-
-**4. Develop social media monitoring properly**
-Twitter/X and other platforms have real potential for understanding patient concerns and informing public health campaigns. The current dataset is insufficient — a structured social listening programme across multiple platforms would generate more actionable insight.
-
-**5. Build demand forecasting from historical trends**
-Historical appointment volume data can support winter surge planning, though the 2020–2022 window is unusual due to Covid and may not represent typical seasonal patterns. Longer historical data would improve forecast reliability.
 
 ---
 
 ## Limitations
+
+Several limitations impacted the reliability and scope of the analysis:
 
 - **Fixed capacity benchmark:** The 1.2M daily figure is applied uniformly regardless of day type, making true utilisation rates unreliable
 - **Data quality:** Unknown/unmapped values dominate several key metrics — particularly appointment duration — making confident conclusions difficult
@@ -352,22 +338,9 @@ Historical appointment volume data can support winter surge planning, though the
 - **Twitter data limitations:** Small, unrepresentative dataset with no reliable sentiment scoring; treated as indicative only
 - **Bank holiday distortion:** Monday appointment counts are inflated or deflated depending on bank holiday occurrence, affecting weekly trend analysis
 - **No financial modelling:** Cost implications are estimated from published £30 per missed appointment figure; actual cost calculations would require additional data
-
----
-
-## Limitations
-
-Several limitations impacted the reliability and scope of the analysis:
-
-* Significant unmapped or inconsistent operational data
-* Static capacity assumptions distorted utilisation calculations
-* Covid disruption created unusual utilisation patterns
-* Limited demographic and socio-economic patient data
-* Limited social media sample quality and coverage
-* The project focused primarily on exploratory rather than predictive analysis
+- **Analysis Focus:** The project focused primarily on exploratory rather than predictive analysis - It looked at  what has already happened rather than what is likely to happen in the future
 
 Despite these limitations, the analysis identified clear operational trends and important process improvement opportunities.
-
 ---
 
 ## Future Steps
