@@ -325,8 +325,6 @@ Healthcare-related social media activity demonstrated potential value for:
 
 ---
 
----
-
 ## Limitations
 
 Several limitations impacted the reliability and scope of the analysis:
@@ -341,22 +339,22 @@ Several limitations impacted the reliability and scope of the analysis:
 - **Analysis Focus:** The project focused primarily on exploratory rather than predictive analysis - It looked at  what has already happened rather than what is likely to happen in the future
 
 Despite these limitations, the analysis identified clear operational trends and important process improvement opportunities.
----
 
-## Future Steps
+---
+## Further Analysis
 
 Potential future enhancements include:
 
-* Predictive modelling for appointment demand forecasting
-* Regional capacity forecasting models
-* Patient segmentation analysis
-* Automated operational reporting dashboards
-* Real-time utilisation monitoring
-* Enhanced data validation pipelines
-* Integration of demographic and socio-economic datasets
-* Weather and transport data integration for missed appointment analysis
-* NLP-based sentiment analysis of social media data
-
+- **Develop a predictive model** - Predictive modelling for appointment demand forecasting
+- **Demographic data integration** — link appointment records to patient demographic and socio-economic data to identify at-risk non-attendance groups
+- **Extended time series** — include pre-2020 data to establish a non-Covid baseline for seasonal forecasting
+- **Transport and weather overlay** — test whether proximity to transport links or weather conditions predict missed appointment rates
+- **Realistic capacity modelling** — rebuild the capacity benchmark using actual working day and appointment availability patterns
+- **Structured social listening** — develop a proper social media monitoring framework across Twitter/X, Facebook, and other platforms
+- **Regional variation analysis** — explore whether missed appointment rates and utilisation patterns vary significantly between the seven regions
+- **Patient segmentation** - Segmenting and clustering by paatient type, age, demographic etc
+- **Sentiment analysis** - The use of NLP-based sentiment analysis of social media data to gauge opinion
+- **Live dashborads** - Automated operational reporting dashboards for real-time utilisation monitoring
 ---
 
 ## Deliverables
@@ -370,6 +368,33 @@ Potential future enhancements include:
 
 ---
 
+## Repository Structure
+
+```
+├── data/
+│   ├── actual_duration_clean.csv
+│   ├── appointments_regional_clean.csv
+│   ├── national_categories_clean.csv
+│   └── twitter.csv
+├── notebooks/
+│   └── Willacy_Andrew_DA201_Assignment_Notebook.ipynb
+├── report/
+│   └── Willacy_Andrew_DA201_Assignment_Report.pdf
+└── README.md
+```
+
+---
+
+## Results Summary
+
+| Question | Finding |
+|----------|---------|
+| Adequate capacity? | Capacity is under strain at peaks; the capacity benchmark itself is flawed and needs rebuilding |
+| Actual utilisation? | Growing demand, 91.5% GP-driven; data quality prevents a fully reliable utilisation picture |
+| Missed appointments? | 4–5% DNA rate consistently; routine appointments most affected; £30 cost per missed slot |
+| Social media value? | Limited in current form; significant potential if properly developed |
+
+---
 ## About
 
 This project was completed as part of the **LSE Data Analytics Career Accelerator (2025, Distinction)**.
