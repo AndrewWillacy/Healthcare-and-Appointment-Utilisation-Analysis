@@ -130,9 +130,9 @@ Key data quality issues identified included:
 | Duplicate records in regional appointment data | Inflated reporting outputs          |
 
 The project identified that several reporting limitations originated from upstream operational recording practices rather than analytical methodology.
-- **Capacity benchmark issue identified:** The NHS uses a fixed daily capacity figure of 1.2 million appointments across all days, including weekends where actual volumes are significantly lower. This fundamentally skews utilisation calculations and was flagged as a primary data quality concern throughout the analysis
+- > **Capacity benchmark issue identified:** The NHS uses a fixed daily capacity figure of 1.2 million appointments across all days, including weekends where actual volumes are significantly lower. This fundamentally skews utilisation calculations and was flagged as a primary data quality concern throughout the analysis
 
-- **Key data quality finding:** Across multiple metrics — particularly appointment duration — "Unknown" and unmapped values were frequently the highest-count category, often exceeding any named value. This was investigated as a systemic recording failure rather than random missingness, and treated as the primary analytical limitation rather than a problem to be imputed around.
+- > **Key data quality finding:** Across multiple metrics — particularly appointment duration — "Unknown" and unmapped values were frequently the highest-count category, often exceeding any named value. This was investigated as a systemic recording failure rather than random missingness, and treated as the primary analytical limitation rather than a problem to be imputed around.
 
 ---
 
@@ -195,13 +195,14 @@ The analysis identified:
 | Observation                                                       | Operational Impact                     |
 | ----------------------------------------------------------------- | -------------------------------------- |
 | Missed appointments consistently represented 4–5% of appointments | Financial and operational inefficiency |
+| 4–5% of appointments were unmapped or unclassifiabl               | Data quality and reliability issues    |
 | Routine appointments showed higher non-attendance rates           | Increased scheduling inefficiency      |
 | Capacity pressure increased during winter periods                 | Evidence of operational strain         |
 | Demand increased steadily following Covid disruption              | Growing utilisation pressure           |
 
 The project also identified a significant issue relating to the use of a fixed daily capacity assumption.
 
-A static figure of approximately 1.2 million appointments per day was applied across all days, including weekends and bank holidays, despite significantly lower appointment demand during these periods.
+A static figure of approximately 1.2 million appointments per day was applied across all days, including weekends and bank holidays, despite significantly lower appointment demand during these periods. Indeed GP practices are generally closed on these days
 
 This introduced distortion into utilisation calculations and reduced confidence in capacity reporting outputs.
 
@@ -209,12 +210,6 @@ A key conclusion of the analysis was:
 
 > The primary limitation affecting operational insight was not analytical capability, but inconsistent and unreliable operational data capture.
 
----
-**Missed appointments:**
-- 4–5% of appointments were recorded as missed (DNA — Did Not Attend) across the period
-- A further 4–5% were unmapped or unclassifiable
-- Missed appointments were more frequent in routine categories than urgent ones
-- At £30 per missed appointment, the financial cost is substantial — and the social cost of lost slots equally significant
 ---
 ### 4. Social Media Analysis
 
