@@ -195,7 +195,7 @@ The analysis identified:
 | Observation                                                       | Operational Impact                     |
 | ----------------------------------------------------------------- | -------------------------------------- |
 | Missed appointments consistently represented 4–5% of appointments | Financial and operational inefficiency |
-| 4–5% of appointments were unmapped or unclassifiabl               | Data quality and reliability issues    |
+| 4–5% of appointments were unmapped or unclassifiable              | Data quality and reliability issues    |
 | Routine appointments showed higher non-attendance rates           | Increased scheduling inefficiency      |
 | Capacity pressure increased during winter periods                 | Evidence of operational strain         |
 | Demand increased steadily following Covid disruption              | Growing utilisation pressure           |
@@ -239,17 +239,6 @@ Key observations included:
 However, the analysis also concluded that the supplied social media dataset was relatively limited and would require more structured collection and enrichment for operational use.
 
 ---
-cording problem
-
-**Missed appointments:**
-- 4–5% of appointments were recorded as missed (DNA — Did Not Attend) across the period
-- A further 4–5% were unmapped or unclassifiable
-- Missed appointments were more frequent in routine categories than urgent ones
-- At £30 per missed appointment, the financial cost is substantial — and the social cost of lost slots equally significant
-
-**National categories:**
-- The majority of appointments were classified as "Routine"
-- Urgent appointments showed stronger seasonal variation, spiking in winter months
 
 ### 3. Twitter / Social Media Analysis
 
