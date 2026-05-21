@@ -324,31 +324,34 @@ Healthcare-related social media activity demonstrated potential value for:
 > Explore structured sentiment analysis and social media monitoring as part of broader operational and communications analytics capability.
 
 ---
+## Recommendations
 
-## Key Findings
+**1. Fix the capacity benchmark**
+The 1.2 million daily capacity figure must be adjusted to reflect actual working days and appointment availability patterns. Applying a uniform figure across weekends and bank holidays produces misleading utilisation rates.
 
-### Capacity & Utilisation
+**2. Improve data recording at source**
+Unknown and unmapped values are the single biggest barrier to reliable insight. Without consistent recording of appointment duration, status, and context type, capacity planning will remain guesswork. Investment in data quality at ICB level is more valuable than additional analytical sophistication.
 
-| Finding | Detail |
-|---------|--------|
-| Demand is growing | Steady upward trend across the period; GP services under most pressure |
-| Capacity calculation is flawed | 1.2M daily figure applied uniformly including weekends — skews all utilisation metrics |
-| Peak pressure visible | Winter months and post-lockdown recovery periods show clear capacity strain |
-| Data quality is the primary problem | Unknown/unmapped values dominate key metrics; reliable utilisation analysis requires better recording at source |
+**3. Address missed appointments through process, not punishment**
+Text and email reminders for routine appointments could reduce DNA rates, with the caveat that digital access cannot be assumed for all patients. Making rescheduling and cancellation easier — through apps or patient portals where available — is likely more effective than financial penalties, which disproportionately affect the most vulnerable patients.
 
-### Missed Appointments
+**4. Develop social media monitoring properly**
+Twitter/X and other platforms have real potential for understanding patient concerns and informing public health campaigns. The current dataset is insufficient — a structured social listening programme across multiple platforms would generate more actionable insight.
 
-| Metric | Value |
-|--------|-------|
-| DNA rate | 4–5% consistently across the period |
-| Unmapped/unclassifiable | Further 4–5% |
-| Financial cost per missed appointment | £30 |
-| Most affected category | Routine appointments |
-| Least affected category | Urgent appointments |
+**5. Build demand forecasting from historical trends**
+Historical appointment volume data can support winter surge planning, though the 2020–2022 window is unusual due to Covid and may not represent typical seasonal patterns. Longer historical data would improve forecast reliability.
 
-### Social Media
+---
 
-Twitter data shows potential as a channel for understanding public sentiment but requires significant development before it could inform operational decisions.
+## Limitations
+
+- **Fixed capacity benchmark:** The 1.2M daily figure is applied uniformly regardless of day type, making true utilisation rates unreliable
+- **Data quality:** Unknown/unmapped values dominate several key metrics — particularly appointment duration — making confident conclusions difficult
+- **Covid distortion:** The 2020–2022 window is not representative of typical NHS demand patterns; lockdown-era trends may not recur
+- **No demographic data:** Patient demographics are not available in the dataset — it is impossible to identify which patient groups are most likely to miss appointments
+- **Twitter data limitations:** Small, unrepresentative dataset with no reliable sentiment scoring; treated as indicative only
+- **Bank holiday distortion:** Monday appointment counts are inflated or deflated depending on bank holiday occurrence, affecting weekly trend analysis
+- **No financial modelling:** Cost implications are estimated from published £30 per missed appointment figure; actual cost calculations would require additional data
 
 ---
 
