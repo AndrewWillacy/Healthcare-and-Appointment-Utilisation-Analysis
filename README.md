@@ -332,9 +332,9 @@ Healthcare-related social media activity demonstrated potential value for:
 Several limitations impacted the reliability and scope of the analysis:
 
 - **Fixed capacity benchmark:** The 1.2M daily figure is applied uniformly regardless of day type, making true utilisation rates unreliable
-- **Data quality:** Unknown/unmapped values dominate several key metrics — particularly appointment duration — making confident conclusions difficult
+- **Data quality:** Unknown/unmapped values dominate several key metrics - particularly appointment duration - making confident conclusions difficult
 - **Covid distortion:** The 2020–2022 window is not representative of typical NHS demand patterns; lockdown-era trends may not recur
-- **No demographic data:** Patient demographics are not available in the dataset — it is impossible to identify which patient groups are most likely to miss appointments
+- **No demographic data:** Patient demographics are not available in the dataset - it is impossible to identify which patient groups are most likely to miss appointments
 - **Twitter data limitations:** Small, unrepresentative dataset with no reliable sentiment scoring; treated as indicative only
 - **Bank holiday distortion:** Monday appointment counts are inflated or deflated depending on bank holiday occurrence, affecting weekly trend analysis
 - **No financial modelling:** Cost implications are estimated from published £30 per missed appointment figure; actual cost calculations would require additional data
