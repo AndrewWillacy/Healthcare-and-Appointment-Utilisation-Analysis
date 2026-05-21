@@ -374,7 +374,7 @@ Potential future enhancements include:
 |----------|---------|
 | Adequate capacity? | Capacity is under strain at peaks; the capacity benchmark itself is flawed and needs rebuilding |
 | Actual utilisation? | Growing demand, 91.5% GP-driven; data quality prevents a fully reliable utilisation picture |
-| Missed appointments? | 4–5% DNA *Did Not Attend) rate consistently; routine appointments most affected; £30 cost per missed slot |
+| Missed appointments? | 4–5% DNA (Did Not Attend) rate consistently; routine appointments most affected; £30 cost per missed slot |
 | Social media value? | Limited in current form; significant potential if properly developed |
 
 ---
