@@ -239,39 +239,7 @@ Key observations included:
 However, the analysis also concluded that the supplied social media dataset was relatively limited and would require more structured collection and enrichment for operational use.
 
 ---
-## Analytical Approach
-
-### 1. Data Ingestion & Cleaning
-
-Four datasets were imported and cleaned independently before analysis:
-
-- **Null values** checked across all datasets — none found in primary fields
-- **Duplicates** identified and removed in `appointments_regional` only
-- **Data types** validated and corrected where necessary
-- **Excel to CSV conversion** applied to `national_categories.xlsx` for consistency
-- **Cleaned datasets** saved with `_clean` suffix to preserve originals
-- **Capacity benchmark issue identified:** The NHS uses a fixed daily capacity figure of 1.2 million appointments across all days, including weekends where actual volumes are significantly lower. This fundamentally skews utilisation calculations and was flagged as a primary data quality concern throughout the analysis
-
-**Key data quality finding:** Across multiple metrics — particularly appointment duration — "Unknown" and unmapped values were frequently the highest-count category, often exceeding any named value. This was investigated as a systemic recording failure rather than random missingness, and treated as the primary analytical limitation rather than a problem to be imputed around.
-
-### 2. Exploratory Data Analysis
-
-**Scale and structure:**
-- 106 locations across 7 NHS regions
-- Date range: 2020–2022 (covering pre-Covid baseline, lockdown period, and recovery)
-- General Practice accounted for 91.5% of all appointments
-- Face-to-face was the most common appointment mode; telephone became significantly more common during Covid lockdowns and remained elevated post-restriction
-
-**Volume trends:**
-- November 2021 recorded the highest monthly appointment volume (30.4 million)
-- August 2021 recorded the lowest (23.9 million)
-- A clear seasonal pattern emerged with dips in December–February, likely reflecting holiday periods and weather effects
-- A steady upward trend in total appointments across the period, with a visible dip during lockdowns followed by recovery
-
-**Appointment duration:**
-- The majority of appointments with recorded durations lasted 6–10 minutes
-- 1–5 minute appointments were the most frequently occurring named category
-- "Unknown" duration was the single largest category overall — a significant data recording problem
+cording problem
 
 **Missed appointments:**
 - 4–5% of appointments were recorded as missed (DNA — Did Not Attend) across the period
