@@ -288,10 +288,10 @@ These missed appointments:
 
 > Introduce more proactive appointment reminder and rescheduling systems including:
 
-* SMS reminders
-* Email notifications
-* Simplified cancellation and rescheduling systems
-* Digital patient self-service tools
+> * SMS reminders
+> * Email notifications
+> * Simplified cancellation and rescheduling systems
+> * Digital patient self-service tools
 
 ---
 
@@ -303,10 +303,10 @@ The use of a fixed daily capacity assumption distorted utilisation analysis, par
 
 > Develop more realistic dynamic capacity models aligned to:
 
-* Seasonal demand
-* Day-of-week variation
-* Staffing availability
-* Regional operational pressures
+> * Seasonal demand
+> * Day-of-week variation
+> * Staffing availability
+> * Regional operational pressures
 
 ---
 
