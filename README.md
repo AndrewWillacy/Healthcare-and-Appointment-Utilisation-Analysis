@@ -207,7 +207,7 @@ A static figure of approximately 1.2 million appointments per day was applied ac
 This introduced distortion into utilisation calculations and reduced confidence in capacity reporting outputs.
 
 Figure 1: Average daily GP appointments per day (The red dotted line represents the 1.2M daily capacity)
-<img width="1100" height="770" alt="Screenshot 2025-08-08 154933" src="https://github.com/user-attachments/assets/6af06337-9d00-4eae-9c8b-13392007eab5" />
+<img width="800" height="500" alt="Screenshot 2025-08-08 154933" src="https://github.com/user-attachments/assets/6af06337-9d00-4eae-9c8b-13392007eab5" />
 
 
 A key conclusion of the analysis was:
