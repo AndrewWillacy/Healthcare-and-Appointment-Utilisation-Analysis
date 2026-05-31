@@ -297,6 +297,12 @@ These missed appointments:
 * Created financial waste
 * Reduced appointment availability for other patients
 
+Figure 5: Missed appointments tend to occur when the wait time is between 2-7 days
+<img width="1802" height="859" alt="Screenshot 2025-08-08 193308" src="https://github.com/user-attachments/assets/da5b9a98-e41b-4eb7-87c1-325516573e0f" />
+
+Figure 6: Appointment attendance status - Unknown once again accounts for a small but significant %
+<img width="2103" height="863" alt="Screenshot 2025-08-09 142700" src="https://github.com/user-attachments/assets/ee86775a-66f7-414a-9053-5c9944ebcd86" />
+
 #### Recommendation
 
 > Introduce more proactive appointment reminder and rescheduling systems including:
