@@ -318,6 +318,9 @@ Figure 6: Appointment attendance status - Unknown once again accounts for a smal
 
 The use of a fixed daily capacity assumption distorted utilisation analysis, particularly during weekends and bank holidays.
 
+Figure 7: Daily capacity is static eventhough demand is dynamic
+<img width="1364" height="352" alt="Screenshot 2025-08-08 154731" src="https://github.com/user-attachments/assets/099243be-7839-4e9e-9c47-dc9bbfbbb478" />
+
 #### Recommendation
 
 > Develop more realistic dynamic capacity models aligned to:
