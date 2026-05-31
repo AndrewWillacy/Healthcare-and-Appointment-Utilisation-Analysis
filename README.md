@@ -206,6 +206,10 @@ A static figure of approximately 1.2 million appointments per day was applied ac
 
 This introduced distortion into utilisation calculations and reduced confidence in capacity reporting outputs.
 
+
+<img width="1371" height="789" alt="Screenshot 2025-08-08 154933" src="https://github.com/user-attachments/assets/6af06337-9d00-4eae-9c8b-13392007eab5" />
+
+
 A key conclusion of the analysis was:
 
 > The primary limitation affecting operational insight was not analytical capability, but inconsistent and unreliable operational data capture.
