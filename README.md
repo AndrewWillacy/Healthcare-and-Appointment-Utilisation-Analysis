@@ -278,7 +278,7 @@ Large volumes of unmapped and inconsistently recorded data reduced confidence in
 | Static capacity assumptions      | Misleading operational reporting |
 
 Figure 4: Removing GP appointments shows that unmapped accounts for the highest number of appointments
-<img width="1350" height="655" alt="Screenshot 2025-08-08 153553" src="https://github.com/user-attachments/assets/e724385e-641f-4849-8cf4-d8cb4da916cd" />
+<img width="900" height="400" alt="Screenshot 2025-08-08 153553" src="https://github.com/user-attachments/assets/e724385e-641f-4849-8cf4-d8cb4da916cd" />
 
 #### Recommendation
 
