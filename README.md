@@ -341,8 +341,8 @@ Healthcare-related social media activity demonstrated potential value for:
 * Identifying recurring public concerns
 * Supporting engagement strategies
 
-Figure 8: Mopst used health related hashtags on Twitter (X)
-<img width="1200" height="600" alt="tweets" src="https://github.com/user-attachments/assets/699c1879-efcf-4d47-a9b9-6f85ba601de1" />
+Figure 8: Most used health related hashtags on Twitter (X)
+<img width="800" height="450" alt="tweets" src="https://github.com/user-attachments/assets/699c1879-efcf-4d47-a9b9-6f85ba601de1" />
 
 #### Recommendation
 
