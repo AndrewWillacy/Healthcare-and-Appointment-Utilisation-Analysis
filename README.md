@@ -258,6 +258,8 @@ Appointment demand increased steadily across the analysed period, particularly f
 Figure 2: Appointments by mode - shows how telephone incraesed over the Covid lockdowns
 <img width="1357" height="406" alt="Screenshot 2025-08-08 160117" src="https://github.com/user-attachments/assets/b502335e-f0c3-46f8-8c9d-39894f2c61b8" />
 
+Figure 3:Estimated weekly utilisation (Covid lockdowns shown in grey)
+<img width="1357" height="406" alt="Screenshot 2025-08-08 160117" src="https://github.com/user-attachments/assets/5f38b1d6-eb1c-4840-992e-b370a7860a88" />
 
 #### Recommendation
 
