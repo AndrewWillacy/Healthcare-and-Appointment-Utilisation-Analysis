@@ -255,6 +255,10 @@ Appointment demand increased steadily across the analysed period, particularly f
 | Winter utilisation spikes        | Seasonal operational strain               |
 | Increased telephone appointments | Covid-driven service adaptation           |
 
+Figure 2: Appointments by mode - shows how telephone incraesed over the Covid lockdowns
+<img width="1357" height="406" alt="Screenshot 2025-08-08 160117" src="https://github.com/user-attachments/assets/b502335e-f0c3-46f8-8c9d-39894f2c61b8" />
+
+
 #### Recommendation
 
 > Continue monitoring utilisation trends and align staffing and operational resources more dynamically around predictable seasonal demand patterns.
