@@ -233,6 +233,8 @@ Appointment demand increased steadily across the analysed period, particularly f
 | Winter utilisation spikes        | Seasonal operational strain               |
 | Increased telephone appointments | Covid-driven service adaptation           |
 
+<img width="2066" height="788" alt="Screenshot 2026-07-10 145357" src="https://github.com/user-attachments/assets/17187059-5483-43bb-a0e8-20c6d6e5e790" />
+
 > **Recommendation:** Develop a demand-weighted capacity model reflecting actual working day availability by day type and season. Align staffing resources to predictable seasonal patterns, particularly the autumn/winter peak.
 
 ---
@@ -246,6 +248,8 @@ Large volumes of unmapped and inconsistently recorded data — particularly the 
 | Unmapped appointment categories  | Reduced reporting reliability    |
 | Inconsistent recording standards | Distorted utilisation analysis   |
 | Static capacity assumptions      | Misleading operational reporting |
+
+<img width="2048" height="950" alt="Screenshot 2026-07-10 154635" src="https://github.com/user-attachments/assets/a7fc2405-daf7-46d6-bfa5-02c89189f99f" />
 
 > **Recommendation:** Prioritise improvements to operational data capture processes before implementing more advanced analytical or forecasting models.
 
@@ -262,13 +266,15 @@ These missed appointments:
 * Created financial waste
 * Reduced appointment availability for other patients
 
+<img width="1354" height="505" alt="Screenshot 2025-08-08 160941" src="https://github.com/user-attachments/assets/c87339bd-1ad2-4fe8-b966-ea48610b5e00" />
+
 > **Recommendation:** Introduce proactive appointment reminder and rescheduling systems (SMS, email, digital self-service). Deploy interventions differentially by region and wait time category rather than uniformly.
 
 ---
 
 ### Finding 4: The Capacity Benchmark Is Fundamentally Misconfigured
 
-The use of a fixed 1.2 million daily capacity figure — applied uniformly including weekends when GP practices are closed — creates a systematic distortion in all downstream utilisation reporting.
+The use of a fixed 1.2 million daily capacity figure - applied uniformly including weekends when GP practices are closed - creates a systematic distortion in all downstream utilisation reporting.
 
 > **Recommendation:** Rebuild the capacity benchmark using actual working day and appointment availability patterns. Develop dynamic capacity models aligned to seasonal demand, day-of-week variation, and regional operational pressures.
 
