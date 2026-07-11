@@ -257,7 +257,7 @@ Large volumes of unmapped and inconsistently recorded data — particularly the 
 | Static capacity assumptions      | Misleading operational reporting |
 
 Figure 8: Data quality issues (Example) - Note rise in unknown/Data quality over the period
-<img width="2048" height="950" alt="Screenshot 2026-07-10 154635" src="https://github.com/user-attachments/assets/c3d97ba1-485f-462b-bfb6-97fee740e896" />
+<img width="1600" height="500" alt="Screenshot 2026-07-10 154635" src="https://github.com/user-attachments/assets/c3d97ba1-485f-462b-bfb6-97fee740e896" />
 
 > **Recommendation:** Prioritise improvements to operational data capture processes before implementing more advanced analytical or forecasting models.
 
