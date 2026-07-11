@@ -28,6 +28,30 @@ Key findings included:
 The final recommendations focused on improving data quality processes, strengthening capacity planning, reducing missed appointments, and improving operational resource allocation.
 
 ---
+---
+
+## Executive Summary
+
+This project analyses large-scale NHS appointment and utilisation data to identify operational trends, capacity pressures, missed appointment patterns, and data quality issues impacting healthcare planning and service delivery.
+
+Using Python, Excel, and exploratory data analysis techniques, the project investigates over one million healthcare appointment records across 106 Sub-ICB locations and seven regions. The analysis explores appointment utilisation, seasonal demand patterns, HCP trends, service setting performance, missed appointment behaviour by wait time and geography, and operational strain across the healthcare network.
+
+The project combines structured data cleaning, validation, exploratory analysis, geographic mapping, and visualisation to transform raw operational healthcare data into actionable business insight.
+
+**A major finding of the project was that data quality limitations — particularly unmapped appointment categories, inconsistent recording practices, and an unrealistic capacity benchmark — represented a more significant barrier to reliable decision-making than analytical complexity itself.**
+
+Key findings included:
+
+- General Practice accounted for 91.5% of appointments across the network
+- The system operated at an average of **103.2% of its stated daily capacity** across the analysis period; October 2021 was the worst month at **120.3%** of weekday capacity
+- Missed appointments (DNA) consistently represented **4–5%** of all appointments; a further 4–5% had unknown status
+- **Same-day appointments had a ~19.8% DNA rate** — nearly 1 in 5 not attended
+- The top 10 highest-DNA Sub-ICB regions ranged from **4.7%–5.8%**, concentrated in the Midlands and London (NHS Black Country and NHS Greater Manchester worst affected)
+- Significant data quality issues — particularly the dominant 'Unknown' category — reduced confidence in utilisation reporting
+- Appointment demand increased steadily following Covid disruption, with clear seasonal patterns (autumn/winter capacity consistently breached)
+- Social media data demonstrated limited analytical value in current form but potential for structured future use
+
+---
 
 ## Business Problem
 
