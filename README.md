@@ -162,7 +162,8 @@ A major focus of the project involved analysing actual capacity utilisation agai
 
 **Day-of-week:** Tuesday was consistently the highest-volume day; capacity breached on Monday and Tuesday in ~90% of weeks. Friday was the only day where the majority of weeks remained within capacity. Weekends had near-zero appointments, confirming the 1.2M daily benchmark is meaningless when applied uniformly.
 
-<img width="1486" height="864" alt="Screenshot 2026-07-11 172210" src="https://github.com/user-attachments/assets/b23cd8ce-9793-47b5-a666-822546d20db6" />
+Figure 3: Average Daily Appoinments by day of week (Note 1.2 Million Max capacity red horizontal line)
+<img width="1100" height="500" alt="Screenshot 2026-07-11 172210" src="https://github.com/user-attachments/assets/b23cd8ce-9793-47b5-a666-822546d20db6" />
 
 ---
 
