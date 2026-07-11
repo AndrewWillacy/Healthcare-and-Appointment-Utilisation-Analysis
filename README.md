@@ -257,7 +257,7 @@ Large volumes of unmapped and inconsistently recorded data — particularly the 
 | Static capacity assumptions      | Misleading operational reporting |
 
 Figure 8: Data quality issues (Example) - Note rise in unknown/Data quality over the period
-<img width="1600" height="500" alt="Screenshot 2026-07-10 154635" src="https://github.com/user-attachments/assets/c3d97ba1-485f-462b-bfb6-97fee740e896" />
+<img width="1600" height="600" alt="Screenshot 2026-07-10 154635" src="https://github.com/user-attachments/assets/c3d97ba1-485f-462b-bfb6-97fee740e896" />
 
 > **Recommendation:** Prioritise improvements to operational data capture processes before implementing more advanced analytical or forecasting models.
 
@@ -274,6 +274,7 @@ These missed appointments:
 * Created financial waste
 * Reduced appointment availability for other patients
 
+Figure 9: Monthly Appointments by Attendance Status
 <img width="1354" height="505" alt="Screenshot 2025-08-08 160941" src="https://github.com/user-attachments/assets/c87339bd-1ad2-4fe8-b966-ea48610b5e00" />
 
 > **Recommendation:** Introduce proactive appointment reminder and rescheduling systems (SMS, email, digital self-service). Deploy interventions differentially by region and wait time category rather than uniformly.
