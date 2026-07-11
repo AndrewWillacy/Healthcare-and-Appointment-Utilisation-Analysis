@@ -116,91 +116,73 @@ Key data quality issues identified included:
 
 > **Key data quality finding:** The primary limitation affecting operational insight was not analytical capability, but inconsistent and unreliable operational data capture. The 'Unknown' category was frequently the largest single value in key metrics — treated as a systemic recording failure rather than random missingness.
 
-
 ---
 
 ### 2. Exploratory Data Analysis
 
-Exploratory analysis was conducted using Python to identify utilisation trends, seasonal patterns, operational pressures, and missed appointment behaviour.
-
-The analysis investigated:
-
-* Appointment volumes by month
-* Appointment duration patterns
-* Service setting utilisation
-* Appointment modes
-* Seasonal demand variation
-* Missed appointment rates
-* Regional differences in utilisation
-* Covid-related operational disruption
-* Capacity and utilisation trends
-
-Key exploratory findings included:
+Exploratory analysis was conducted using Python to identify utilisation trends, seasonal patterns, operational pressures, HCP behaviour, and missed appointment patterns.
 
 **Scale and structure:**
-- 106 locations across 7 NHS regions
-- Date range: 2020–2022 (covering pre-Covid baseline, lockdown period, and recovery)
-- General Practice accounted for 91.5% of all appointments
-- Face-to-face was the most common appointment mode; telephone became significantly more common during Covid lockdowns and remained elevated post-restriction
+- 106 Sub-ICB locations across 7 regions; NHS North West London ICB was the highest-volume location (12.1M appointments, 4.1% of total)
+- General Practice accounted for 91.5% of all appointments — national patterns are almost entirely GP-driven
+- Face-to-face was the most common appointment mode; telephone increased dramatically during Covid lockdowns and remained elevated post-restriction
 
 **Volume trends:**
 - November 2021 recorded the highest monthly appointment volume (30.4 million)
 - August 2021 recorded the lowest (23.9 million)
-- A clear seasonal pattern emerged with dips in December–February, likely reflecting holiday periods and weather effects
-- A steady upward trend in total appointments across the period, with a visible dip during lockdowns followed by recovery
+- Steady upward trend across the period, with a visible dip during lockdowns followed by recovery
 
-**Appointment duration:**
-- The majority of appointments with recorded durations lasted 6–10 minutes
-- 1–5 minute appointments were the most frequently occurring named category
-- "Unknown" duration was the single largest category overall — a significant data recording problem
+**Seasonal patterns:**
+- Summer (Aug 2021): volumes below capacity benchmark across all weeks
+- Autumn (Sep–Nov 2021): capacity consistently breached from October; predictable seasonal pressure
+- Winter (Dec 2021–Feb 2022): more variability; Christmas week near-zero across all settings
+- Spring (Mar–May 2022): appointments concentrated Monday–Wednesday; Easter dip visible
 
-**National categories:**
-- The majority of appointments were classified as "Routine"
-- Urgent appointments showed stronger seasonal variation, spiking in winter months
-
-Visualisations included:
-
-* Time series analysis
-* Appointment trend visualisations
-* Service setting comparisons
-* Duration distribution charts
-* Seasonal trend analysis
-* Appointment category comparisons
+**HCP trends:**
+- GP appointments dominated throughout; Other Practice Staff and Unknown HCP types showed distinct seasonal patterns — rising in autumn and spring, contrasting with GP winter peak pressure
 
 ---
 
-### 3. Missed Appointment & Capacity Analysis
+### 3. Capacity & Utilisation Analysis
 
-A major focus of the project involved analysing missed appointments and operational utilisation pressures.
+A major focus of the project involved analysing actual capacity utilisation against the NHS stated benchmark of 1.2 million appointments per day.
 
-The analysis identified:
+| Month | Total Appointments | Utilisation |
+|---|---|---|
+| October 2021 | 30.3 million | 120.3% — worst crisis month |
+| November 2021 | 30.4 million | 115.2% |
+| August 2021 | 23.9 million | Lowest in period |
+| Average across period | — | 103.2% — above benchmark every month |
 
-| Observation                                                       | Operational Impact                     |
-| ----------------------------------------------------------------- | -------------------------------------- |
-| Missed appointments consistently represented 4–5% of appointments | Financial and operational inefficiency |
-| 4–5% of appointments were unmapped or unclassifiable              | Data quality and reliability issues    |
-| Routine appointments showed higher non-attendance rates           | Increased scheduling inefficiency      |
-| Capacity pressure increased during winter periods                 | Evidence of operational strain         |
-| Demand increased steadily following Covid disruption              | Growing utilisation pressure           |
-
-The project also identified a significant issue relating to the use of a fixed daily capacity assumption.
-
-A static figure of approximately 1.2 million appointments per day was applied across all days, including weekends and bank holidays, despite significantly lower appointment demand during these periods. Indeed GP practices are generally closed on these days
-
-This introduced distortion into utilisation calculations and reduced confidence in capacity reporting outputs.
-
-Figure 1: Average daily GP appointments per day (The red dotted line represents the 1.2M daily capacity)
-<img width="800" height="500" alt="Screenshot 2025-08-08 154933" src="https://github.com/user-attachments/assets/6af06337-9d00-4eae-9c8b-13392007eab5" />
-
-
-A key conclusion of the analysis was:
-
-> The primary limitation affecting operational insight was not analytical capability, but inconsistent and unreliable operational data capture.
+**Day-of-week:** Tuesday was consistently the highest-volume day; capacity breached on Monday and Tuesday in ~90% of weeks. Friday was the only day where the majority of weeks remained within capacity. Weekends had near-zero appointments, confirming the 1.2M daily benchmark is meaningless when applied uniformly.
 
 ---
-### 4. Social Media Analysis
 
-External Twitter (X) data was analysed to explore the potential value of social media as an additional operational insight source.
+### 4. Missed Appointment Analysis
+
+Missed appointments (DNA) consistently represented 4–5% of all appointments. A further 4–5% had unknown status — meaning the true non-attendance rate may be as high as 9% but cannot be confirmed from the data.
+
+**By wait time (distribution of DNA appointments):**
+
+| Wait Time Category | Share of Total DNAs | Note |
+|---|---|---|
+| 2–7 days | Highest share | Largest single category of missed appointments |
+| Same day | ~19.8% | Nearly 1 in 5 same-day appointments not attended |
+| 22+ days | Lowest share | Patients with longer lead times show stronger attendance commitment |
+
+The structural stability of the DNA distribution over time is itself significant — the pattern remained broadly consistent throughout the Covid period, suggesting this is a structural feature of NHS appointment behaviour requiring deliberate intervention rather than post-pandemic normalisation.
+
+**By Sub-ICB Region:**
+- Top 10 highest-DNA regions: 4.7%–5.8%
+- NHS Black Country, NHS Greater Manchester, and NHS Birmingham & Solihull — all Midlands regions — showed the worst confirmed DNA rates
+- Geographic mapping confirmed concentration in densely populated urban areas (Midlands and London)
+- The same regions also showed the highest Unknown status rates (3.9%–4.8%), suggesting recording quality and non-attendance risk are geographically correlated
+
+---
+
+### 5. Social Media Analysis
+
+Twitter (X) data was analysed to explore potential value for operational insight. The most frequent hashtag was #healthcare — appearing nearly ten times more than the second. Most tweets received zero retweets and likes.
 
 The analysis investigated:
 
@@ -216,16 +198,226 @@ Key observations included:
   * #healthcare
   * #health
   * #medicine
-* Social media data showed potential value for:
-
-  * Patient sentiment monitoring
-  * Public awareness campaigns
-  * Engagement trend analysis
-  * Service communication strategies
 
 > The data in its current form has limited analytical value. The hashtag frequency analysis provides directional information about topics but no reliable sentiment signal. The dataset was treated as indicative of potential rather than a source of actionable insight — and this was communicated explicitly rather than overstated.
 
 ---
+
+## Key Findings & Recommendations
+
+### Finding 1: The System Was Operating Above Structural Capacity
+
+The NHS operated at an average of 103.2% of its stated daily capacity across the analysis period. October 2021 was the worst month at 120.3% of weekday capacity — running 20.3% above structural limits.
+
+Appointment demand increased steadily across the analysed period, particularly following Covid-related disruption.
+
+| Trend                            | Operational Interpretation                |
+| -------------------------------- | ----------------------------------------- |
+| Rising appointment volumes       | Increasing pressure on NHS infrastructure |
+| Winter utilisation spikes        | Seasonal operational strain               |
+| Increased telephone appointments | Covid-driven service adaptation           |
+
+> **Recommendation:** Develop a demand-weighted capacity model reflecting actual working day availability by day type and season. Align staffing resources to predictable seasonal patterns, particularly the autumn/winter peak.
+
+---
+
+### Finding 2: Data Quality Issues Limited Operational Insight
+
+Large volumes of unmapped and inconsistently recorded data — particularly the dominant 'Unknown' category — reduced confidence in reporting outputs across multiple metrics.
+
+| Data Quality Issue               | Business Impact                  |
+| -------------------------------- | -------------------------------- |
+| Unmapped appointment categories  | Reduced reporting reliability    |
+| Inconsistent recording standards | Distorted utilisation analysis   |
+| Static capacity assumptions      | Misleading operational reporting |
+
+> **Recommendation:** Prioritise improvements to operational data capture processes before implementing more advanced analytical or forecasting models.
+
+---
+
+### Finding 3: Missed Appointments Are a Structural Problem
+
+DNA rates of 4–5% were consistent across the period with no improvement trend — this is a structural feature requiring deliberate intervention. Same-day appointments (~19.8% DNA rate) are the highest-risk category. Geographic concentration in the Midlands and London suggests targeted regional intervention is more appropriate than uniform national campaigns.
+
+These missed appointments:
+
+* Reduced operational efficiency
+* Increased pressure on healthcare services
+* Created financial waste
+* Reduced appointment availability for other patients
+
+> **Recommendation:** Introduce proactive appointment reminder and rescheduling systems (SMS, email, digital self-service). Deploy interventions differentially by region and wait time category rather than uniformly.
+
+---
+
+### Finding 4: The Capacity Benchmark Is Fundamentally Misconfigured
+
+The use of a fixed 1.2 million daily capacity figure — applied uniformly including weekends when GP practices are closed — creates a systematic distortion in all downstream utilisation reporting.
+
+> **Recommendation:** Rebuild the capacity benchmark using actual working day and appointment availability patterns. Develop dynamic capacity models aligned to seasonal demand, day-of-week variation, and regional operational pressures.
+
+---
+
+### Finding 5: Social Media Requires Investment to Become Useful
+
+The current Twitter dataset demonstrates the gap between ad hoc data and analytically useful data.
+
+> **Recommendation:** Develop a structured social media monitoring framework across multiple platforms with consistent metadata, volume, and geographic tagging.
+
+---
+
+## Limitations
+
+| Limitation | Impact |
+|---|---|
+| Fixed capacity benchmark (1.2M daily) | Applied uniformly to all days including weekends — fundamentally distorts utilisation analysis |
+| 'Unknown' category dominant | Limits confidence in duration, status, and utilisation conclusions |
+| Covid distortion (2020–2022) | Not representative of typical NHS demand; lockdown-era trends may not recur |
+| No demographic data | Cannot identify which patient groups drive missed appointments |
+| Twitter dataset | Small, unrepresentative, no reliable sentiment signal |
+| Monday distortion | Bank holiday displacement inflates Monday appointment counts |
+| Cross-dataset joins | Many-to-many matches when joining appointments_regional and national_categories — DNA-by-service-setting results are directional only |
+| No financial modelling | Cost implications estimated from published £30/missed appointment figure only |
+
+---
+
+## Further Analysis
+
+- **Demand-weighted capacity modelling** — rebuild the benchmark using actual working day patterns
+- **Demographic data integration** — link to patient demographics and socioeconomic data to identify at-risk non-attendance groups
+- **Extended time series** — include pre-2020 data to establish a non-Covid seasonal baseline
+- **Predictive DNA modelling** — classification model to identify high-risk appointments for proactive intervention
+- **Transport and weather overlay** — test whether proximity to transport links or weather conditions predict missed appointment rates
+- **Structured social listening** — social media monitoring framework across multiple platforms
+- **Group consultation capacity modelling** — Group Consultation and Education accounted for only 60,632 appointments vs 97.3M routine GP consultations; modelling the potential impact of scaling group models warrants investigation
+- **Live dashboards** — automated operational reporting for real-time utilisation monitoring
+
+---
+
+## Repository Structure
+
+```
+├── CSV Files/
+│   ├── actual_duration_clean.csv
+│   ├── appointments_regional_clean.csv
+│   ├── national_categories_clean.csv
+│   ├── NHS-ICB_names.csv
+│   └── tweets.csv
+├── NHS_Healthcare_Jupyter_Notebook.ipynb
+├── sub_icb_boundaries_geojson.geojson
+├── Presentation_slides.pptx
+├── NHS_Technical_Report.pdf
+├── metadata_nhs.txt
+└── README.md
+```
+
+---
+
+## Results Summary
+
+| Question | Finding |
+|---|---|
+| Adequate capacity? | No — system averaged 103.2% of stated capacity; October 2021 reached 120.3%. Benchmark itself is fundamentally misconfigured. |
+| Actual utilisation? | Growing demand, 91.5% GP-driven; seasonal peaks in autumn/winter consistently breach capacity; data quality prevents a fully reliable utilisation picture |
+| Missed appointments? | 4–5% DNA consistently; same-day appointments ~19.8% DNA rate; geographic concentration in Midlands and London; no improvement trend over time |
+| Social media value? | Limited in current form — insufficient volume and structure; significant potential if properly developed |
+
+---
+
+## About
+
+This project was completed as part of the **LSE Data Analytics Career Accelerator (2025, Distinction)**. Grade: 72/90 (DA201).
+
+**Andrew Willacy**
+[LinkedIn](https://www.linkedin.com/in/andrew-willacy-572682347/) | [GitHub Portfolio](https://github.com/AndrewWillacy) | andrew.willacy.data@gmail.com
+
+
+
+---
+---
+---
+
+
+
+
+
+## Further Analysis
+
+Potential future enhancements include:
+
+- **Develop a predictive model** - Predictive modelling for appointment demand forecasting
+- **Demographic data integration** - link appointment records to patient demographic and socio-economic data to identify at-risk non-attendance groups
+- **Extended time series** - include pre-2020 data to establish a non-Covid baseline for seasonal forecasting
+- **Transport and weather overlay** - test whether proximity to transport links or weather conditions predict missed appointment rates
+- **Realistic capacity modelling** - rebuild the capacity benchmark using actual working day and appointment availability patterns
+- **Structured social listening** - develop a proper social media monitoring framework across Twitter/X, Facebook, and other platforms
+- **Regional variation analysis** - explore whether missed appointment rates and utilisation patterns vary significantly between the seven regions
+- **Patient segmentation** - Segmenting and clustering by paatient type, age, demographic etc
+- **Sentiment analysis** - The use of NLP-based sentiment analysis of social media data to gauge opinion
+- **Live dashborads** - Automated operational reporting dashboards for real-time utilisation monitoring
+---
+
+## Deliverables
+
+| Deliverable              | Description                                  |
+| ------------------------ | -------------------------------------------- |
+| Jupyter Notebook         | Python-based exploratory analysis workflow   |
+| Technical Report         | Operational findings and recommendations     |
+| Data Visualisations      | Trend analysis and utilisation reporting     |
+| Stakeholder Presentation | Business-focused operational insight summary |
+
+---
+
+## Results Summary
+
+| Question | Finding |
+|----------|---------|
+| Adequate capacity? | Capacity is under strain at peaks; the capacity benchmark itself is flawed and needs rebuilding |
+| Actual utilisation? | Growing demand, 91.5% GP-driven; data quality prevents a fully reliable utilisation picture |
+| Missed appointments? | 4–5% DNA (Did Not Attend) rate consistently; routine appointments most affected; £30 cost per missed slot |
+| Social media value? | Limited in current form; significant potential if properly developed |
+
+---
+
+## Repository Structure
+
+```
+├── data/
+│   ├── actual_duration_clean.csv
+│   ├── appointments_regional_clean.csv
+│   ├── national_categories_clean.csv
+│   └── twitter.csv
+├── notebooks/
+│   └── Willacy_Andrew_DA201_Assignment_Notebook.ipynb
+├── report/
+│   └── Willacy_Andrew_DA201_Assignment_Report.pdf
+└── README.md
+```
+
+## About
+
+This project was completed as part of the **LSE Data Analytics Career Accelerator (2025, Distinction)**.
+
+The analysis focused on transforming large-scale operational healthcare data into actionable insight through structured cleaning, validation, exploratory analysis, visualisation, and operational interpretation.
+
+**Andrew Willacy**
+[LinkedIn](https://www.linkedin.com/in/andrew-willacy-572682347/) | [GitHub Portfolio](https://github.com/AndrewWillacy) | [andrew.willacy.data@gmail.com](mailto:andrew.willacy.data@gmail.com)
+
+---
+---
+---
+
+# NHS Healthcare Appointment, Utilisation & Capacity Analysis
+
+**Healthcare Operations Analytics Project | LSE Data Analytics Career Accelerator | 2025 | Grade: 72/90**
+
+> *How can healthcare appointment and utilisation data be used to improve operational planning, reduce missed appointments, and support more effective capacity management across a national healthcare system?*
+
+
+
+
+
+
 ## Key Findings & Business Recommendations
 
 ### Finding 1: Operational Demand Continued to Increase
@@ -331,8 +523,6 @@ Figure 8: Most used health related hashtags on Twitter (X)
 
 > Explore structured sentiment analysis and social media monitoring as part of broader operational and communications analytics capability.
 
----
-
 ## Limitations
 
 Several limitations impacted the reliability and scope of the analysis:
@@ -349,257 +539,5 @@ Several limitations impacted the reliability and scope of the analysis:
 Despite these limitations, the analysis identified clear operational trends and important process improvement opportunities.
 
 ---
-## Further Analysis
 
-Potential future enhancements include:
-
-- **Develop a predictive model** - Predictive modelling for appointment demand forecasting
-- **Demographic data integration** - link appointment records to patient demographic and socio-economic data to identify at-risk non-attendance groups
-- **Extended time series** - include pre-2020 data to establish a non-Covid baseline for seasonal forecasting
-- **Transport and weather overlay** - test whether proximity to transport links or weather conditions predict missed appointment rates
-- **Realistic capacity modelling** - rebuild the capacity benchmark using actual working day and appointment availability patterns
-- **Structured social listening** - develop a proper social media monitoring framework across Twitter/X, Facebook, and other platforms
-- **Regional variation analysis** - explore whether missed appointment rates and utilisation patterns vary significantly between the seven regions
-- **Patient segmentation** - Segmenting and clustering by paatient type, age, demographic etc
-- **Sentiment analysis** - The use of NLP-based sentiment analysis of social media data to gauge opinion
-- **Live dashborads** - Automated operational reporting dashboards for real-time utilisation monitoring
----
-
-## Deliverables
-
-| Deliverable              | Description                                  |
-| ------------------------ | -------------------------------------------- |
-| Jupyter Notebook         | Python-based exploratory analysis workflow   |
-| Technical Report         | Operational findings and recommendations     |
-| Data Visualisations      | Trend analysis and utilisation reporting     |
-| Stakeholder Presentation | Business-focused operational insight summary |
-
----
-
-## Results Summary
-
-| Question | Finding |
-|----------|---------|
-| Adequate capacity? | Capacity is under strain at peaks; the capacity benchmark itself is flawed and needs rebuilding |
-| Actual utilisation? | Growing demand, 91.5% GP-driven; data quality prevents a fully reliable utilisation picture |
-| Missed appointments? | 4–5% DNA (Did Not Attend) rate consistently; routine appointments most affected; £30 cost per missed slot |
-| Social media value? | Limited in current form; significant potential if properly developed |
-
----
-
-## Repository Structure
-
-```
-├── data/
-│   ├── actual_duration_clean.csv
-│   ├── appointments_regional_clean.csv
-│   ├── national_categories_clean.csv
-│   └── twitter.csv
-├── notebooks/
-│   └── Willacy_Andrew_DA201_Assignment_Notebook.ipynb
-├── report/
-│   └── Willacy_Andrew_DA201_Assignment_Report.pdf
-└── README.md
-```
-
-## About
-
-This project was completed as part of the **LSE Data Analytics Career Accelerator (2025, Distinction)**.
-
-The analysis focused on transforming large-scale operational healthcare data into actionable insight through structured cleaning, validation, exploratory analysis, visualisation, and operational interpretation.
-
-**Andrew Willacy**
-[LinkedIn](https://www.linkedin.com/in/andrew-willacy-572682347/) | [GitHub Portfolio](https://github.com/AndrewWillacy) | [andrew.willacy.data@gmail.com](mailto:andrew.willacy.data@gmail.com)
-
----
----
----
-
-# NHS Healthcare Appointment, Utilisation & Capacity Analysis
-
-**Healthcare Operations Analytics Project | LSE Data Analytics Career Accelerator | 2025 | Grade: 72/90**
-
-> *How can healthcare appointment and utilisation data be used to improve operational planning, reduce missed appointments, and support more effective capacity management across a national healthcare system?*
-
-
-## Analytical Approach
-
-
-
-### 2. Exploratory Data Analysis
-
-Exploratory analysis was conducted using Python to identify utilisation trends, seasonal patterns, operational pressures, HCP behaviour, and missed appointment patterns.
-
-**Scale and structure:**
-- 106 Sub-ICB locations across 7 regions; NHS North West London ICB was the highest-volume location (12.1M appointments, 4.1% of total)
-- General Practice accounted for 91.5% of all appointments — national patterns are almost entirely GP-driven
-- Face-to-face was the most common appointment mode; telephone increased dramatically during Covid lockdowns and remained elevated post-restriction
-
-**Volume trends:**
-- November 2021 recorded the highest monthly appointment volume (30.4 million)
-- August 2021 recorded the lowest (23.9 million)
-- Steady upward trend across the period, with a visible dip during lockdowns followed by recovery
-
-**Seasonal patterns:**
-- Summer (Aug 2021): volumes below capacity benchmark across all weeks
-- Autumn (Sep–Nov 2021): capacity consistently breached from October; predictable seasonal pressure
-- Winter (Dec 2021–Feb 2022): more variability; Christmas week near-zero across all settings
-- Spring (Mar–May 2022): appointments concentrated Monday–Wednesday; Easter dip visible
-
-**HCP trends:**
-- GP appointments dominated throughout; Other Practice Staff and Unknown HCP types showed distinct seasonal patterns — rising in autumn and spring, contrasting with GP winter peak pressure
-
----
-
-### 3. Capacity & Utilisation Analysis
-
-A major focus of the project involved analysing actual capacity utilisation against the NHS stated benchmark of 1.2 million appointments per day.
-
-| Month | Total Appointments | Utilisation |
-|---|---|---|
-| October 2021 | 30.3 million | 120.3% — worst crisis month |
-| November 2021 | 30.4 million | 115.2% |
-| August 2021 | 23.9 million | Lowest in period |
-| Average across period | — | 103.2% — above benchmark every month |
-
-**Day-of-week:** Tuesday was consistently the highest-volume day; capacity breached on Monday and Tuesday in ~90% of weeks. Friday was the only day where the majority of weeks remained within capacity. Weekends had near-zero appointments, confirming the 1.2M daily benchmark is meaningless when applied uniformly.
-
----
-
-### 4. Missed Appointment Analysis
-
-Missed appointments (DNA) consistently represented 4–5% of all appointments. A further 4–5% had unknown status — meaning the true non-attendance rate may be as high as 9% but cannot be confirmed from the data.
-
-**By wait time (distribution of DNA appointments):**
-
-| Wait Time Category | Share of Total DNAs | Note |
-|---|---|---|
-| 2–7 days | Highest share | Largest single category of missed appointments |
-| Same day | ~19.8% | Nearly 1 in 5 same-day appointments not attended |
-| 22+ days | Lowest share | Patients with longer lead times show stronger attendance commitment |
-
-The structural stability of the DNA distribution over time is itself significant — the pattern remained broadly consistent throughout the Covid period, suggesting this is a structural feature of NHS appointment behaviour requiring deliberate intervention rather than post-pandemic normalisation.
-
-**By Sub-ICB Region:**
-- Top 10 highest-DNA regions: 4.7%–5.8%
-- NHS Black Country, NHS Greater Manchester, and NHS Birmingham & Solihull — all Midlands regions — showed the worst confirmed DNA rates
-- Geographic mapping confirmed concentration in densely populated urban areas (Midlands and London)
-- The same regions also showed the highest Unknown status rates (3.9%–4.8%), suggesting recording quality and non-attendance risk are geographically correlated
-
----
-
-### 5. Social Media Analysis
-
-Twitter (X) data was analysed to explore potential value for operational insight. The most frequent hashtag was #healthcare — appearing nearly ten times more than the second. Most tweets received zero retweets and likes.
-
-The dataset in its current form has limited analytical value — insufficient volume, no geographic tagging, and sparse metadata. Treated as indicative of potential rather than a source of actionable insight.
-
----
-
-## Key Findings & Recommendations
-
-### Finding 1: The System Was Operating Above Structural Capacity
-
-The NHS operated at an average of 103.2% of its stated daily capacity across the analysis period. October 2021 was the worst month at 120.3% of weekday capacity — running 20.3% above structural limits.
-
-> **Recommendation:** Develop a demand-weighted capacity model reflecting actual working day availability by day type and season. Align staffing resources to predictable seasonal patterns, particularly the autumn/winter peak.
-
----
-
-### Finding 2: Data Quality Issues Limited Operational Insight
-
-Large volumes of unmapped and inconsistently recorded data — particularly the dominant 'Unknown' category — reduced confidence in reporting outputs across multiple metrics.
-
-> **Recommendation:** Prioritise improvements to operational data capture processes before implementing more advanced analytical or forecasting models.
-
----
-
-### Finding 3: Missed Appointments Are a Structural Problem
-
-DNA rates of 4–5% were consistent across the period with no improvement trend — this is a structural feature requiring deliberate intervention. Same-day appointments (~19.8% DNA rate) are the highest-risk category. Geographic concentration in the Midlands and London suggests targeted regional intervention is more appropriate than uniform national campaigns.
-
-> **Recommendation:** Introduce proactive appointment reminder and rescheduling systems (SMS, email, digital self-service). Deploy interventions differentially by region and wait time category rather than uniformly.
-
----
-
-### Finding 4: The Capacity Benchmark Is Fundamentally Misconfigured
-
-The use of a fixed 1.2 million daily capacity figure — applied uniformly including weekends when GP practices are closed — creates a systematic distortion in all downstream utilisation reporting.
-
-> **Recommendation:** Rebuild the capacity benchmark using actual working day and appointment availability patterns. Develop dynamic capacity models aligned to seasonal demand, day-of-week variation, and regional operational pressures.
-
----
-
-### Finding 5: Social Media Requires Investment to Become Useful
-
-The current Twitter dataset demonstrates the gap between ad hoc data and analytically useful data.
-
-> **Recommendation:** Develop a structured social media monitoring framework across multiple platforms with consistent metadata, volume, and geographic tagging.
-
----
-
-## Limitations
-
-| Limitation | Impact |
-|---|---|
-| Fixed capacity benchmark (1.2M daily) | Applied uniformly to all days including weekends — fundamentally distorts utilisation analysis |
-| 'Unknown' category dominant | Limits confidence in duration, status, and utilisation conclusions |
-| Covid distortion (2020–2022) | Not representative of typical NHS demand; lockdown-era trends may not recur |
-| No demographic data | Cannot identify which patient groups drive missed appointments |
-| Twitter dataset | Small, unrepresentative, no reliable sentiment signal |
-| Monday distortion | Bank holiday displacement inflates Monday appointment counts |
-| Cross-dataset joins | Many-to-many matches when joining appointments_regional and national_categories — DNA-by-service-setting results are directional only |
-| No financial modelling | Cost implications estimated from published £30/missed appointment figure only |
-
----
-
-## Further Analysis
-
-- **Demand-weighted capacity modelling** — rebuild the benchmark using actual working day patterns
-- **Demographic data integration** — link to patient demographics and socioeconomic data to identify at-risk non-attendance groups
-- **Extended time series** — include pre-2020 data to establish a non-Covid seasonal baseline
-- **Predictive DNA modelling** — classification model to identify high-risk appointments for proactive intervention
-- **Transport and weather overlay** — test whether proximity to transport links or weather conditions predict missed appointment rates
-- **Structured social listening** — social media monitoring framework across multiple platforms
-- **Group consultation capacity modelling** — Group Consultation and Education accounted for only 60,632 appointments vs 97.3M routine GP consultations; modelling the potential impact of scaling group models warrants investigation
-- **Live dashboards** — automated operational reporting for real-time utilisation monitoring
-
----
-
-## Repository Structure
-
-```
-├── CSV Files/
-│   ├── actual_duration_clean.csv
-│   ├── appointments_regional_clean.csv
-│   ├── national_categories_clean.csv
-│   ├── NHS-ICB_names.csv
-│   └── tweets.csv
-├── NHS_Healthcare_Jupyter_Notebook.ipynb
-├── sub_icb_boundaries_geojson.geojson
-├── Presentation_slides.pptx
-├── NHS_Technical_Report.pdf
-├── metadata_nhs.txt
-└── README.md
-```
-
----
-
-## Results Summary
-
-| Question | Finding |
-|---|---|
-| Adequate capacity? | No — system averaged 103.2% of stated capacity; October 2021 reached 120.3%. Benchmark itself is fundamentally misconfigured. |
-| Actual utilisation? | Growing demand, 91.5% GP-driven; seasonal peaks in autumn/winter consistently breach capacity; data quality prevents a fully reliable utilisation picture |
-| Missed appointments? | 4–5% DNA consistently; same-day appointments ~19.8% DNA rate; geographic concentration in Midlands and London; no improvement trend over time |
-| Social media value? | Limited in current form — insufficient volume and structure; significant potential if properly developed |
-
----
-
-## About
-
-This project was completed as part of the **LSE Data Analytics Career Accelerator (2025, Distinction)**. Grade: 72/90 (DA201).
-
-**Andrew Willacy**
-[LinkedIn](https://www.linkedin.com/in/andrew-willacy-572682347/) | [GitHub Portfolio](https://github.com/AndrewWillacy) | andrew.willacy.data@gmail.com
 
