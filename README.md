@@ -182,7 +182,7 @@ Missed appointments (DNA) consistently represented 4–5% of all appointments. A
 The structural stability of the DNA distribution over time is itself significant — the pattern remained broadly consistent throughout the Covid period, suggesting this is a structural feature of NHS appointment behaviour requiring deliberate intervention rather than post-pandemic normalisation.
 
 Figure 4: Percentage of Missed Appointments (DNA) by Wait times
-<img width="1000" height="500" alt="Screenshot 2026-07-10 164231" src="https://github.com/user-attachments/assets/cab419ed-186b-46d3-9c94-9bca7bf2fd08" />
+<img width="900" height="400" alt="Screenshot 2026-07-10 164231" src="https://github.com/user-attachments/assets/cab419ed-186b-46d3-9c94-9bca7bf2fd08" />
 
 **By Sub-ICB Region:**
 - Top 10 highest-DNA regions: 4.7%–5.8%
@@ -190,8 +190,8 @@ Figure 4: Percentage of Missed Appointments (DNA) by Wait times
 - Geographic mapping confirmed concentration in densely populated urban areas (Midlands and London)
 - The same regions also showed the highest Unknown status rates (3.9%–4.8%), suggesting recording quality and non-attendance risk are geographically correlated
 
-Figure 5: 
-<img width="2098" height="996" alt="Screenshot 2026-07-10 155825" src="https://github.com/user-attachments/assets/43e83a6d-98df-4cb8-923d-ddf399ebe6d7" />
+Figure 5: Top DNA Sub_ICB Regions
+<img width="1800" height="800" alt="Screenshot 2026-07-10 155825" src="https://github.com/user-attachments/assets/43e83a6d-98df-4cb8-923d-ddf399ebe6d7" />
 
 **By Service Setting:**
 
