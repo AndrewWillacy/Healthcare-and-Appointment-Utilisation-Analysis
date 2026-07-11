@@ -132,6 +132,8 @@ Exploratory analysis was conducted using Python to identify utilisation trends, 
 - August 2021 recorded the lowest (23.9 million)
 - Steady upward trend across the period, with a visible dip during lockdowns followed by recovery
 
+<img width="1700" height="710" alt="Screenshot 2026-07-11 171410" src="https://github.com/user-attachments/assets/52725805-4022-46bb-8463-3959bb962f5e" />
+
 **Seasonal patterns:**
 - Summer (Aug 2021): volumes below capacity benchmark across all weeks
 - Autumn (Sep–Nov 2021): capacity consistently breached from October; predictable seasonal pressure
@@ -140,6 +142,8 @@ Exploratory analysis was conducted using Python to identify utilisation trends, 
 
 **HCP trends:**
 - GP appointments dominated throughout; Other Practice Staff and Unknown HCP types showed distinct seasonal patterns — rising in autumn and spring, contrasting with GP winter peak pressure
+
+<img width="2066" height="788" alt="Screenshot 2026-07-10 145357" src="https://github.com/user-attachments/assets/ce121342-62d2-4fbe-8237-7a30df43577f" />
 
 ---
 
@@ -155,6 +159,8 @@ A major focus of the project involved analysing actual capacity utilisation agai
 | Average across period | — | 103.2% — above benchmark every month |
 
 **Day-of-week:** Tuesday was consistently the highest-volume day; capacity breached on Monday and Tuesday in ~90% of weeks. Friday was the only day where the majority of weeks remained within capacity. Weekends had near-zero appointments, confirming the 1.2M daily benchmark is meaningless when applied uniformly.
+
+<img width="1486" height="864" alt="Screenshot 2026-07-11 172210" src="https://github.com/user-attachments/assets/b23cd8ce-9793-47b5-a666-822546d20db6" />
 
 ---
 
@@ -172,11 +178,21 @@ Missed appointments (DNA) consistently represented 4–5% of all appointments. A
 
 The structural stability of the DNA distribution over time is itself significant — the pattern remained broadly consistent throughout the Covid period, suggesting this is a structural feature of NHS appointment behaviour requiring deliberate intervention rather than post-pandemic normalisation.
 
+<img width="1734" height="1106" alt="Screenshot 2026-07-10 164231" src="https://github.com/user-attachments/assets/cab419ed-186b-46d3-9c94-9bca7bf2fd08" />
+
 **By Sub-ICB Region:**
 - Top 10 highest-DNA regions: 4.7%–5.8%
 - NHS Black Country, NHS Greater Manchester, and NHS Birmingham & Solihull — all Midlands regions — showed the worst confirmed DNA rates
 - Geographic mapping confirmed concentration in densely populated urban areas (Midlands and London)
 - The same regions also showed the highest Unknown status rates (3.9%–4.8%), suggesting recording quality and non-attendance risk are geographically correlated
+
+<img width="2098" height="996" alt="Screenshot 2026-07-10 155825" src="https://github.com/user-attachments/assets/43e83a6d-98df-4cb8-923d-ddf399ebe6d7" />
+
+**By Service Setting:**
+
+GP has the worst DNA rate, but this is to be expected as GP appointment account for over half of all NHS appointments. More concerning is the other service setting DNA rates are not that much lower even though those settings account for far less appointments than GP
+
+<img width="2103" height="863" alt="Screenshot 2025-08-09 142700" src="https://github.com/user-attachments/assets/c69dd430-3225-4be4-bb03-cc1d06f1fefc" />
 
 ---
 
