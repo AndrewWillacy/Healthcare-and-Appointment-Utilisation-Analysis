@@ -10,30 +10,6 @@
 
 This project analyses large-scale NHS appointment and utilisation data to identify operational trends, capacity pressures, missed appointment patterns, and data quality issues impacting healthcare planning and service delivery.
 
-Using Python, Excel, and exploratory data analysis techniques, the project investigates over one million healthcare appointment records across 106 locations and seven regions. The analysis explores appointment utilisation, seasonal demand patterns, appointment duration trends, service setting performance, and operational strain across the healthcare network.
-
-The project combines structured data cleaning, validation, exploratory analysis, and visualisation to transform raw operational healthcare data into actionable business insight.
-
-A major finding of the project was that data quality limitations — particularly unmapped appointment categories, inconsistent recording practices, and unrealistic capacity assumptions — represented a more significant barrier to reliable decision-making than analytical complexity itself.
-
-Key findings included:
-
-* General Practice accounted for over 90% of appointments across the network
-* Missed appointments consistently represented approximately 4–5% of all appointments
-* Capacity pressures became more visible during winter periods and post-lockdown recovery
-* Significant data quality issues reduced confidence in utilisation reporting
-* Appointment demand increased steadily following Covid disruption
-* Social media data demonstrated potential value for patient sentiment monitoring and engagement analysis
-
-The final recommendations focused on improving data quality processes, strengthening capacity planning, reducing missed appointments, and improving operational resource allocation.
-
----
----
-
-## Executive Summary
-
-This project analyses large-scale NHS appointment and utilisation data to identify operational trends, capacity pressures, missed appointment patterns, and data quality issues impacting healthcare planning and service delivery.
-
 Using Python, Excel, and exploratory data analysis techniques, the project investigates over one million healthcare appointment records across 106 Sub-ICB locations and seven regions. The analysis explores appointment utilisation, seasonal demand patterns, HCP trends, service setting performance, missed appointment behaviour by wait time and geography, and operational strain across the healthcare network.
 
 The project combines structured data cleaning, validation, exploratory analysis, geographic mapping, and visualisation to transform raw operational healthcare data into actionable business insight.
@@ -77,32 +53,20 @@ The analysis aimed to support:
 
 ## Data Sources
 
-| Source                        | Data Collected                                                   | Purpose                              |
-| ----------------------------- | ---------------------------------------------------------------- | ------------------------------------ |
-| **actual_duration.csv**       | Appointment durations, locations, dates, appointment counts      | Utilisation and duration analysis    |
-| **appointments_regional.csv** | Appointment types, modes, booking lead times, appointment status | Regional operational analysis        |
-| **national_categories.xlsx**  | National appointment categories and service settings             | Capacity and service trend analysis  |
-| **twitter.csv**               | NHS-related social media data                                    | Sentiment and engagement exploration |
+| Source | Data Collected | Purpose |
+|---|---|---|
+| **actual_duration.csv** | Appointment durations, locations, dates, appointment counts | Utilisation and duration analysis |
+| **appointments_regional.csv** | Appointment types, modes, booking lead times, appointment status | Regional operational analysis (21,604 duplicates removed) |
+| **national_categories.csv** | National appointment categories and service settings | Capacity and service trend analysis |
+| **NHS-ICB_names.csv** | NHS ICB reference file (downloaded from NHS website) | Merged with appointments_regional for location name analysis |
+| **tweets.csv** | NHS-related social media data | Sentiment and engagement exploration |
+| **sub_icb_boundaries_geojson.geojson** | ONS Sub-ICB boundary file | Geographic mapping of DNA rates by region |
 
-All datasets were provided as semi-wrangled extracts from publicly available NHS integrated care board (ICB) data. The Excel file was converted to CSV for consistency before analysis.
-
-The combined datasets included:
-
-* Appointment volumes
-* Service settings
-* Appointment modes
-* Appointment durations
-* Regional operational data
-* Appointment categories
-* Missed appointment records
-* Social media activity relating to healthcare
-
-The analysis covered:
-
-* 106 healthcare locations
-* 7 NHS regions
-* Data spanning the Covid and post-Covid recovery period
-* Over 1 million appointment-related records
+The combined datasets covered:
+- 106 Sub-ICB healthcare locations across 7 NHS regions
+- 42 ICB locations
+- Data spanning January 2020 – June 2022 (Covid and post-Covid recovery period)
+- Over 1 million appointment-related records
 
 ---
 
