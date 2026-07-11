@@ -240,7 +240,7 @@ Appointment demand increased steadily across the analysed period, particularly f
 | Increased telephone appointments | Covid-driven service adaptation           |
 
 Figure 7: Monthly Appointments by Healthcare provider
-<img width="2700" height="850" alt="Screenshot 2026-07-10 145357" src="https://github.com/user-attachments/assets/17187059-5483-43bb-a0e8-20c6d6e5e790" />
+<img width="2600" height="1000" alt="Screenshot 2026-07-10 145357" src="https://github.com/user-attachments/assets/17187059-5483-43bb-a0e8-20c6d6e5e790" />
 
 > **Recommendation:** Develop a demand-weighted capacity model reflecting actual working day availability by day type and season. Align staffing resources to predictable seasonal patterns, particularly the autumn/winter peak.
 
@@ -256,8 +256,8 @@ Large volumes of unmapped and inconsistently recorded data — particularly the 
 | Inconsistent recording standards | Distorted utilisation analysis   |
 | Static capacity assumptions      | Misleading operational reporting |
 
-Figure 8: Unknown/Data quality - example - Unknown/data quality issues rise over the period
-<img width="1600" height=700" alt="Screenshot 2026-07-10 154635" src="https://github.com/user-attachments/assets/a7fc2405-daf7-46d6-bfa5-02c89189f99f" />
+Figure 8: Data quality issues (Example) - Note rise in unknown/Data quality over the period
+<img width="1400" height=7500" alt="Screenshot 2026-07-10 154635" src="https://github.com/user-attachments/assets/a7fc2405-daf7-46d6-bfa5-02c89189f99f" />
 
 > **Recommendation:** Prioritise improvements to operational data capture processes before implementing more advanced analytical or forecasting models.
 
