@@ -239,7 +239,8 @@ Appointment demand increased steadily across the analysed period, particularly f
 | Winter utilisation spikes        | Seasonal operational strain               |
 | Increased telephone appointments | Covid-driven service adaptation           |
 
-<img width="2066" height="788" alt="Screenshot 2026-07-10 145357" src="https://github.com/user-attachments/assets/17187059-5483-43bb-a0e8-20c6d6e5e790" />
+Figure 7:
+<img width="2500" height="600" alt="Screenshot 2026-07-10 145357" src="https://github.com/user-attachments/assets/17187059-5483-43bb-a0e8-20c6d6e5e790" />
 
 > **Recommendation:** Develop a demand-weighted capacity model reflecting actual working day availability by day type and season. Align staffing resources to predictable seasonal patterns, particularly the autumn/winter peak.
 
