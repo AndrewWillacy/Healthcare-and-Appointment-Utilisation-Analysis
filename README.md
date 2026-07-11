@@ -144,7 +144,7 @@ Figure 1: Monthly Appointment variation across the period analysed
 **HCP trends:**
 - GP appointments dominated throughout; Other Practice Staff and Unknown HCP types showed distinct seasonal patterns — rising in autumn and spring, contrasting with GP winter peak pressure
 
-Figure 2: 
+Figure 2: Monthly Appointments by Haelthcare Professional
 <img width="2066" height="788" alt="Screenshot 2026-07-10 145357" src="https://github.com/user-attachments/assets/ce121342-62d2-4fbe-8237-7a30df43577f" />
 
 ---
