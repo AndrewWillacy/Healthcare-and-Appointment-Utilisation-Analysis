@@ -132,8 +132,8 @@ Exploratory analysis was conducted using Python to identify utilisation trends, 
 - August 2021 recorded the lowest (23.9 million)
 - Steady upward trend across the period, with a visible dip during lockdowns followed by recovery
 
-Figure 1:
-<img width="1400" height="500" alt="Screenshot 2026-07-11 171410" src="https://github.com/user-attachments/assets/52725805-4022-46bb-8463-3959bb962f5e" />
+Figure 1: Monthly Appointment variation across the period analysed
+<img width="1200" height="450" alt="Screenshot 2026-07-11 171410" src="https://github.com/user-attachments/assets/52725805-4022-46bb-8463-3959bb962f5e" />
 
 **Seasonal patterns:**
 - Summer (Aug 2021): volumes below capacity benchmark across all weeks
