@@ -191,12 +191,13 @@ Figure 4: Percentage of Missed Appointments (DNA) by Wait times
 - The same regions also showed the highest Unknown status rates (3.9%–4.8%), suggesting recording quality and non-attendance risk are geographically correlated
 
 Figure 5: Top DNA Sub_ICB Regions
-<img width="1800" height="800" alt="Screenshot 2026-07-10 155825" src="https://github.com/user-attachments/assets/43e83a6d-98df-4cb8-923d-ddf399ebe6d7" />
+<img width="1500" height="700" alt="Screenshot 2026-07-10 155825" src="https://github.com/user-attachments/assets/43e83a6d-98df-4cb8-923d-ddf399ebe6d7" />
 
 **By Service Setting:**
 
 GP has the worst DNA rate, but this is to be expected as GP appointment account for over half of all NHS appointments. More concerning is the other service setting DNA rates are not that much lower even though those settings account for far less appointments than GP
 
+Figure 6: DNA by Service Setting
 <img width="2103" height="863" alt="Screenshot 2025-08-09 142700" src="https://github.com/user-attachments/assets/c69dd430-3225-4be4-bb03-cc1d06f1fefc" />
 
 ---
