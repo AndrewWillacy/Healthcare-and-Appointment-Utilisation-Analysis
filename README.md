@@ -327,21 +327,21 @@ The current Twitter dataset demonstrates the gap between ad hoc data and analyti
 
 ## Repository Structure
 
-**Note: The files 'national_categories.xlsx' and 'sub_icb_boundaries_geojson.geojson' are too large for Github so have not been included. They are available available if required**
+**Note: THe files 'national_categories.xlsx' and 'sub_icb_boundaries_geojson.geojson' are too large for Github. The are available on request if requoired**
 ```
 ├── CSV Files/
-│   ├── actual_duration.csv
-│   ├── appointments_regional.csv
-│   ├── national_categories.csv
+│   ├── actual_duration_clean.csv
+│   ├── appointments_regional_clean.csv
+│   ├── national_categories_clean.csv
 │   ├── NHS-ICB_names.csv
 │   └── tweets.csv
 ├── NHS_Healthcare_Jupyter_Notebook.ipynb
 ├── sub_icb_boundaries_geojson.geojson
-├── Presentation_Slides-Deck.pptx
+├── Presentation_slides.pptx
 ├── NHS_Technical_Report.pdf
 ├── metadata_nhs.txt
 └── README.md
-
+```
 
 ---
 
@@ -360,6 +360,3 @@ The current Twitter dataset demonstrates the gap between ad hoc data and analyti
 
 **Andrew Willacy**
 [LinkedIn](https://www.linkedin.com/in/andrew-willacy-572682347/) | [GitHub Portfolio](https://github.com/AndrewWillacy) | andrew.willacy.data@gmail.com
-
-
-
