@@ -314,14 +314,14 @@ The current Twitter dataset demonstrates the gap between ad hoc data and analyti
 
 ## Further Analysis
 
-- **Demand-weighted capacity modelling** — rebuild the benchmark using actual working day patterns
-- **Demographic data integration** — link to patient demographics and socioeconomic data to identify at-risk non-attendance groups
-- **Extended time series** — include pre-2020 data to establish a non-Covid seasonal baseline
-- **Predictive DNA modelling** — classification model to identify high-risk appointments for proactive intervention
-- **Transport and weather overlay** — test whether proximity to transport links or weather conditions predict missed appointment rates
-- **Structured social listening** — social media monitoring framework across multiple platforms
-- **Group consultation capacity modelling** — Group Consultation and Education accounted for only 60,632 appointments vs 97.3M routine GP consultations; modelling the potential impact of scaling group models warrants investigation
-- **Live dashboards** — automated operational reporting for real-time utilisation monitoring
+- **Demand-weighted capacity modelling** - rebuild the benchmark using actual working day patterns
+- **Demographic data integration** - link to patient demographics and socioeconomic data to identify at-risk non-attendance groups
+- **Extended time series** - include pre-2020 data to establish a non-Covid seasonal baseline
+- **Predictive DNA modelling** - classification model to identify high-risk appointments for proactive intervention
+- **Transport and weather overlay** - test whether proximity to transport links or weather conditions predict missed appointment rates
+- **Structured social listening** - social media monitoring framework across multiple platforms
+- **Group consultation capacity modelling** - Group Consultation and Education accounted for only 60,632 appointments vs 97.3M routine GP consultations; modelling the potential impact of scaling group models warrants investigation
+- **Live dashboards** - automated operational reporting for real-time utilisation monitoring
 
 ---
 
