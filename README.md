@@ -327,6 +327,7 @@ The current Twitter dataset demonstrates the gap between ad hoc data and analyti
 
 ## Repository Structure
 
+**Note: The files 'national_categories.xlsx' and 'sub_icb_boundaries_geojson.geojson' are too large for Github so have not been included. They are available available if required**
 ```
 ├── CSV Files/
 │   ├── actual_duration.csv
@@ -340,7 +341,7 @@ The current Twitter dataset demonstrates the gap between ad hoc data and analyti
 ├── NHS_Technical_Report.pdf
 ├── metadata_nhs.txt
 └── README.md
-```
+
 
 ---
 
