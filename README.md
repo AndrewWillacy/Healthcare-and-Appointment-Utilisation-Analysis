@@ -349,10 +349,10 @@ The current Twitter dataset demonstrates the gap between ad hoc data and analyti
 
 | Question | Finding |
 |---|---|
-| Adequate capacity? | No — system averaged 103.2% of stated capacity; October 2021 reached 120.3%. Benchmark itself is fundamentally misconfigured. |
+| Adequate capacity? | No - system averaged 103.2% of stated capacity; October 2021 reached 120.3%. Benchmark itself is fundamentally misconfigured. |
 | Actual utilisation? | Growing demand, 91.5% GP-driven; seasonal peaks in autumn/winter consistently breach capacity; data quality prevents a fully reliable utilisation picture |
 | Missed appointments? | 4–5% DNA consistently; same-day appointments ~19.8% DNA rate; geographic concentration in Midlands and London; no improvement trend over time |
-| Social media value? | Limited in current form — insufficient volume and structure; significant potential if properly developed |
+| Social media value? | Limited in current form - insufficient volume and structure; significant potential if properly developed |
 
 ---
 
