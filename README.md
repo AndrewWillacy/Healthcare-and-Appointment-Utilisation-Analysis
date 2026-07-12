@@ -357,8 +357,6 @@ The current Twitter dataset demonstrates the gap between ad hoc data and analyti
 
 ## About
 
-This project was completed as part of the **LSE Data Analytics Career Accelerator (2025, Distinction)**. Grade: 72/90 (DA201).
-
 **Andrew Willacy**
 [LinkedIn](https://www.linkedin.com/in/andrew-willacy-572682347/) | [GitHub Portfolio](https://github.com/AndrewWillacy) | andrew.willacy.data@gmail.com
 
