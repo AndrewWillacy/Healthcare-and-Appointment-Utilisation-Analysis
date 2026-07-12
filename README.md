@@ -329,14 +329,14 @@ The current Twitter dataset demonstrates the gap between ad hoc data and analyti
 
 ```
 ├── CSV Files/
-│   ├── actual_duration_clean.csv
-│   ├── appointments_regional_clean.csv
-│   ├── national_categories_clean.csv
+│   ├── actual_duration.csv
+│   ├── appointments_regional.csv
+│   ├── national_categories.csv
 │   ├── NHS-ICB_names.csv
 │   └── tweets.csv
 ├── NHS_Healthcare_Jupyter_Notebook.ipynb
 ├── sub_icb_boundaries_geojson.geojson
-├── Presentation_slides.pptx
+├── Presentation_Slides-Deck.pptx
 ├── NHS_Technical_Report.pdf
 ├── metadata_nhs.txt
 └── README.md
