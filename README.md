@@ -144,7 +144,7 @@ Figure 1: Monthly Appointment variation across the period analysed
 **HCP trends:**
 - GP appointments dominated throughout; Other Practice Staff and Unknown HCP types showed distinct seasonal patterns — rising in autumn and spring, contrasting with GP winter peak pressure
 
-Figure 2: Monthly Appointments by Haelthcare Professional
+Figure 2: Monthly Appointments by Healthcare Professional
 <img width="2066" height="788" alt="Screenshot 2026-07-10 145357" src="https://github.com/user-attachments/assets/ce121342-62d2-4fbe-8237-7a30df43577f" />
 
 ---
@@ -195,7 +195,7 @@ Figure 5: Top DNA Sub_ICB Regions
 
 **By Service Setting:**
 
-GP has the worst DNA rate, but this is to be expected as GP appointment account for over half of all NHS appointments. More concerning is the other service setting DNA rates are not that much lower even though those settings account for far less appointments than GP
+GP has the highest DNA rate, although this should be considered in the context of General Practice accounting for 91.5% of appointments. More notable is that DNA rates in other service settings are not substantially lower despite those settings accounting for far fewer appointments.
 
 Figure 6: DNA by Service Setting
 <img width="2103" height="863" alt="Screenshot 2025-08-09 142700" src="https://github.com/user-attachments/assets/c69dd430-3225-4be4-bb03-cc1d06f1fefc" />
@@ -227,9 +227,9 @@ Key observations included:
 
 ## Key Findings & Recommendations
 
-### Finding 1: The System Was Operating Above Structural Capacity
+### Finding 1: Reported Utilisation Exceeded the Stated Capacity Benchmark
 
-The NHS operated at an average of 103.2% of its stated daily capacity across the analysis period. October 2021 was the worst month at 120.3% of weekday capacity — running 20.3% above structural limits.
+The NHS operated at an average of 103.2% of its stated daily capacity across the analysis period. October 2021 was the worst month at 120.3% of weekday capacity — running 20.3% above structural limits. 
 
 Appointment demand increased steadily across the analysed period, particularly following Covid-related disruption.
 
@@ -327,7 +327,7 @@ The current Twitter dataset demonstrates the gap between ad hoc data and analyti
 
 ## Repository Structure
 
-**Note: The files 'national_categories.xlsx' and 'sub_icb_boundaries_geojson.geojson' are too large for Github. The are available on request if requoired**
+**Note: The files 'national_categories.xlsx' and 'sub_icb_boundaries_geojson.geojson' are too large for Github. The are available on request if required**
 ```
 ├── CSV Files/
 │   ├── actual_duration_clean.csv
