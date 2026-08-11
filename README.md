@@ -229,7 +229,7 @@ Key observations included:
 
 ### Finding 1: Reported Utilisation Exceeded the Stated Capacity Benchmark
 
-The NHS operated at an average of 103.2% of its stated daily capacity across the analysis period. October 2021 was the worst month at 120.3% of weekday capacity — running 20.3% above structural limits. 
+Reported utilisation averaged 103.2% of the stated daily capacity benchmark across the analysis period, reaching 120.3% in October 2021. This apparent over-utilisation prompted further investigation of both appointment demand and the underlying capacity assumption.
 
 Appointment demand increased steadily across the analysed period, particularly following Covid-related disruption.
 
