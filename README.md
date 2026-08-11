@@ -231,7 +231,7 @@ Key observations included:
 
 Reported utilisation averaged 103.2% of the stated daily capacity benchmark across the analysis period, reaching 120.3% in October 2021. This apparent over-utilisation prompted further investigation of both appointment demand and the underlying capacity assumption.
 
-Appointment demand increased steadily across the analysed period, particularly following Covid-related disruption.
+Appointment demand showed an overall increase across the analysed period, particularly following Covid-related disruption
 
 | Trend                            | Operational Interpretation                |
 | -------------------------------- | ----------------------------------------- |
